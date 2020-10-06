@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+/* App */
+
+.app {
+    height: 93vh;
+    width: 100vw;
+    background-color: rgb(2, 34, 102);
+    display: flex;
+    flex-direction: column;
+    color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ligne {
+    display: flex;
+    height: calc(100% / 4);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.case {
+    display: flex;
+    width: 50%;
+    color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.case:hover {
+    color: rgb(2, 34, 102);
+    text-decoration: none;
+    background-color: rgb(214, 208, 208);
+    border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.presentation {
+    background-color: rgb(230, 142, 36);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.etudes {
+    background-color: rgb(19, 31, 17);
+}
+
+.experiences_professionnelles {
+    background-color: rgb(2, 62, 24);
+}
+
+.experiences_additionnelles {
+    background-color: rgb(250, 213, 207);
+}
+
+.centres_d_interets {
+    background-color: rgb(241, 107, 36);
+}
+
+.competences {
+    background-color: rgb(124, 86, 1);
+}
+
+.book {
+    background-color: rgb(0, 111, 83);
+}
+
+.contact {
+    background-color: rgb(246, 178, 159);
+}
+
+.domaine {
+    margin: auto;
+}
+
+.titre_domaine {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+/* Header */
+
+.navbar {
+    height: 7vh;
+    z-index: 100 !important;
+}
+
+.nav-link {
+    background-color: #f8f9fa;
+    z-index: 100 !important;
 }
