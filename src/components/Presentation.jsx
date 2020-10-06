@@ -1,6 +1,7 @@
 
 import React, { Component } from 'react'
 import Header from './Header'
+import file from "../docs/CVGuillaumeQueste.pdf"
 
 class Presentation extends Component {
     render () {
@@ -9,6 +10,11 @@ class Presentation extends Component {
                 <Header />
                 <div className="bodyContact">
                     <p>presentation</p>
+                    <a href={file} without rel="noopener noreferrer" target="_blank">
+                        <button trailingIcon="picture_as_pdf" label="Resume">
+                            PDF
+                        </button>
+                    </a>
                 </div>
             </div>
         )
