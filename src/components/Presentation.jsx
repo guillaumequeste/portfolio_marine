@@ -9,7 +9,7 @@ class Presentation extends Component {
             <div>
                 <Header />
                 <div className="bodyContact">
-                    <p>presentation</p>
+                    <p>presentation portfolio</p>
                     <a href={file} without rel="noopener noreferrer" target="_blank">
                         <button trailingIcon="picture_as_pdf" label="Resume">
                             PDF
