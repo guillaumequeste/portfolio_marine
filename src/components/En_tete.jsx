@@ -5,7 +5,6 @@ class En_tete extends Component {
         return (
             <div className="nomPrenom">
                 <h1 className="titre_nomPrenom">Marine Queste</h1>
-                    <hr></hr>
                 <h3 className="intitule">Chef de projet</h3>
             </div>
         )

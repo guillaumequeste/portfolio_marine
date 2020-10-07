@@ -290,31 +290,86 @@
 /* Presentation */
 
 .nomPrenom {
-    height: 20vh;
+    height: 12vh;
     text-align: center;
-    padding-top: 10%;
+    padding-top: 5%;
+    margin: 0;
 }
 
 @media screen and (min-width: 768px) {
     .nomPrenom {
+        height: 15vh;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .nomPrenom {
         padding-top: 2%;
+        height: 18vh;
     }
 }
 
 .titre_nomPrenom {
     font-family: 'Hearth_Stone', sans-serif;
+    font-size: 1em;
+    padding: 0 0 2% 0;
+    border: solid 1px;
+    margin: 0 30% 0 30%;
+    border-top: unset;
+    border-right: unset;
+    border-left: unset;
 }
 
-hr {
-    margin: 0;
+@media screen and (min-width: 768px) {
+    .titre_nomPrenom {
+        font-size: 2em;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .titre_nomPrenom {
+        padding: 0 0 1% 0;
+    }
 }
 
 .intitule {
     font-family: 'Futurist', sans-serif;
     font-size: 0.7em;
+    padding-top: 2%;
+}
+
+@media screen and (min-width: 768px) {
+    .intitule {
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .intitule {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .intitule {
+        padding-top: 1%;
+        font-size: 1em;
+    }
 }
 
 .details {
     background-color: var(--color-presentation);
-    height: 73vh;
+    height: 81vh;
+}
+
+@media screen and (min-width: 768px) {
+    .details {
+        height: 78vh;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .details {
+        height: 75vh;
+    }
 }
