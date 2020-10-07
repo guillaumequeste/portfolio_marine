@@ -1,5 +1,26 @@
 /* App */
 
+.bodyPhoto {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .bodyPhoto {
+        padding-top: 7vh;
+        width: 100vw;
+        height: 93vh;
+        position: fixed;
+        z-index: 10;
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .photo {
+        margin: auto;
+    }
+}
+
 .app {
     height: 93vh;
     width: 100vw;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import Header from './components/Header'
 import Helmet from './components/Helmet'
@@ -9,8 +9,14 @@ const App = () => (
     <Helmet title={"Accueil Découverte de la Normandie et du Littoral"}
               link={"http://chevaux.guillaumequeste.fr"} />
     <Header />
+
+    <div className="bodyPhoto">
+      <div className="photo">
+        <img src={require("./img/300.png")} alt="photo" className="rounded-circle"></img>
+      </div>
+    </div>
+    
     <div className="app">
-     
       <div className="ligne">
         <Link to="/presentation" className="case presentation">
           <div className="domaine">
@@ -35,8 +41,6 @@ const App = () => (
           </div>
         </Link>
       </div>
-      
-
       <div className="ligne">
         <Link to="/centres_d_interets" className="case centres_d_interets">
           <div className="domaine">
