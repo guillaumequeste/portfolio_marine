@@ -1,3 +1,25 @@
+:root {
+    --color-presentation: rgb(224, 170, 25);
+    --color-etudes: rgb(19, 31, 17);
+    --color-experiences_professionnelles: rgb(2, 62, 24);
+    --color-centres_d_interets: rgb(241, 107, 36);
+    --color-competences: rgb(124, 86, 1);
+    --color-experiences_additionnelles: rgb(250, 213, 207);
+    --color-book: rgb(0, 111, 83);
+    --color-contact: rgb(246, 178, 159);
+}
+
+@font-face {
+    font-family: 'Hearth_Stone';
+    src: url('./fonts/Hearth_Stone.ttf') format('truetype'), url('./fonts/Hearth_Stone.otf') format('opentype')
+}
+
+@font-face {
+    font-family: 'Futurist';
+    src: url('./fonts/Futurist.ttf') format('truetype')
+}
+
+
 /* App */
 
 .bodyPhoto {
@@ -28,6 +50,7 @@
     height: 93vh;
     width: 100vw;
     background-color: rgb(2, 34, 102);
+    background-size: cover;
     display: flex;
     flex-direction: column;
     color: white;
@@ -71,7 +94,7 @@
 }
 
 .presentation {
-    background-color: rgb(230, 142, 36);
+    background-color: var(--color-presentation);
 }
 
 @media screen and (min-width: 768px) {
@@ -84,8 +107,9 @@
         z-index: 5;
     }
     .presentation:hover {
-        background-image: url("img/panda.jpeg");
-        background-color: red;
+        background-image: url("img/int_maison_1.jpg");
+        background-repeat: no-repeat;
+        background-position: right;
     }
     .titre_presentation {
         position: fixed;
@@ -95,7 +119,7 @@
 }
 
 .etudes {
-    background-color: rgb(19, 31, 17);
+    background-color: var(--color-etudes);
 }
 
 @media screen and (min-width: 768px) {
@@ -113,7 +137,7 @@
 }
 
 .experiences_professionnelles {
-    background-color: rgb(2, 62, 24);
+    background-color: var(--color-experiences_professionnelles);
 }
 
 @media screen and (min-width: 768px) {
@@ -131,7 +155,7 @@
 }
 
 .centres_d_interets {
-    background-color: rgb(241, 107, 36);
+    background-color: var(--color-centres_d_interets);
 }
 
 @media screen and (min-width: 768px) {
@@ -149,7 +173,7 @@
 }
 
 .competences {
-    background-color: rgb(124, 86, 1);
+    background-color: var(--color-competences);
 }
 
 @media screen and (min-width: 768px) {
@@ -168,7 +192,7 @@
 }
 
 .experiences_additionnelles {
-    background-color: rgb(250, 213, 207);
+    background-color: var(--color-experiences_additionnelles);
 }
 
 @media screen and (min-width: 768px) {
@@ -188,7 +212,7 @@
 }
 
 .book {
-    background-color: rgb(0, 111, 83);
+    background-color: var(--color-book);
 }
 
 @media screen and (min-width: 768px) {
@@ -205,7 +229,7 @@
 }
 
 .contact {
-    background-color: rgb(246, 178, 159);
+    background-color: var(--color-contact);
 }
 
 @media screen and (min-width: 768px) {
@@ -241,7 +265,56 @@
     z-index: 100 !important;
 }
 
+.backgroundNavbar {
+    background-image: url("img/fond_50.jpg");
+    background-size: cover;
+    background-position: 25% 75%;
+}
+
 .nav-link {
-    background-color: #f8f9fa;
+    background-color: rgba(255, 255, 255, 0);
     z-index: 100 !important;
+    color: rgb(89, 13, 43) !important;
+    font-weight: bold;
+}
+
+
+/* Page */
+
+.bodyPage {
+    margin-top: 7vh;
+    min-height: 93vh;
+}
+
+
+/* Presentation */
+
+.nomPrenom {
+    height: 20vh;
+    text-align: center;
+    padding-top: 10%;
+}
+
+@media screen and (min-width: 768px) {
+    .nomPrenom {
+        padding-top: 2%;
+    }
+}
+
+.titre_nomPrenom {
+    font-family: 'Hearth_Stone', sans-serif;
+}
+
+hr {
+    margin: 0;
+}
+
+.intitule {
+    font-family: 'Futurist', sans-serif;
+    font-size: 0.7em;
+}
+
+.details {
+    background-color: var(--color-presentation);
+    height: 73vh;
 }
