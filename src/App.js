@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import Header from './components/Header'
 import Helmet from './components/Helmet'
@@ -12,7 +12,7 @@ const App = () => (
 
     <div className="bodyPhoto">
       <div className="photo">
-        <img src={require("./img/300.png")} alt="photo" className="rounded-circle"></img>
+        <img src={require("./img/marine2.jpg")} alt="photo" className="rounded-circle"></img>
       </div>
     </div>
     
@@ -32,7 +32,7 @@ const App = () => (
       <div className="ligne">
         <Link to="/experiences_professionnelles" className="case experiences_professionnelles">
           <div className="domaine">
-            <p className="titre_domaine titre_experiences_professionnelles">Exp pro</p>
+            <p className="titre_domaine titre_experiences_professionnelles">Expériences professionnelles</p>
           </div>
         </Link>
         <Link to="/experiences_additionnelles" className="case experiences_additionnelles">
