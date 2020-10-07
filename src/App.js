@@ -26,7 +26,7 @@ const App = () => (
       <div className="ligne">
         <Link to="/experiences_professionnelles" className="case experiences_professionnelles">
           <div className="domaine">
-            <p className="titre_domaine titre_experiences_professionnelles">Expériences professionnelles</p>
+            <p className="titre_domaine titre_experiences_professionnelles">Exp pro</p>
           </div>
         </Link>
         <Link to="/experiences_additionnelles" className="case experiences_additionnelles">
@@ -40,7 +40,7 @@ const App = () => (
       <div className="ligne">
         <Link to="/centres_d_interets" className="case centres_d_interets">
           <div className="domaine">
-            <p className="titre_domaine titre_centre_d_interets">Centres d'intérêts</p>
+            <p className="titre_domaine titre_centres_d_interets">Centres d'intérêts</p>
           </div>
         </Link>
         <Link to="/competences" className="case competences">

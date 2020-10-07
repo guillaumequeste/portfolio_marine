@@ -74,17 +74,32 @@
     .etudes {
         width: 100vw;
         height: 47vh;
-        clip-path: polygon(50% 0, 50% 100%, 100% 100%);
+        clip-path: polygon(100% 0, 0 0, 50% 100%);
+        z-index: 2;
     }
     .titre_etudes {
         position: fixed;
-        top: 40%;
+        top: 10%;
         left: 60%;
     }
 }
 
 .experiences_professionnelles {
     background-color: rgb(2, 62, 24);
+}
+
+@media screen and (min-width: 768px) {
+    .experiences_professionnelles {
+        top: 8vh;
+        left: 50vw;
+        width: 50vw;
+        height: 46vh;
+    }
+    .titre_experiences_professionnelles {
+        position: fixed;
+        top: 40%;
+        left: 75%;
+    }
 }
 
 .experiences_additionnelles {
@@ -98,7 +113,7 @@
         width: 100vw;
         height: 46vh;
         clip-path: polygon(100% 0, 50% 100%, 100% 100%);
-        z-index: 5;
+        z-index: 2;
     }
     .titre_experiences_additionnelles {
         position: fixed;
@@ -111,6 +126,20 @@
     background-color: rgb(241, 107, 36);
 }
 
+@media screen and (min-width: 768px) {
+    .centres_d_interets {
+        top: 54vh;
+        left: 50vw;
+        width: 50vw;
+        height: 46vh;
+    }
+    .titre_centres_d_interets {
+        position: fixed;
+        top: 60%;
+        left: 70%;
+    }
+}
+
 .competences {
     background-color: rgb(124, 86, 1);
 }
@@ -121,6 +150,7 @@
         width: 100vw;
         height: 46vh;
         clip-path: polygon(50% 0, 50% 100%, 100% 100%);
+        z-index: 2;
     }
     .titre_competences {
         position: fixed;
@@ -131,6 +161,19 @@
 
 .book {
     background-color: rgb(0, 111, 83);
+}
+
+@media screen and (min-width: 768px) {
+    .book {
+        top: 54vh;
+        width: 50vw;
+        height: 46vh;
+    }
+    .titre_book {
+        position: fixed;
+        top: 60%;
+        left: 10%;
+    }
 }
 
 .contact {
