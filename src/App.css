@@ -9,9 +9,21 @@
     color: white;
 }
 
+@media screen and (min-width: 768px) {
+    .app {
+        display: block;
+    }
+}
+
 .ligne {
     display: flex;
     height: calc(100% / 4);
+}
+
+@media screen and (min-width: 768px) {
+    .ligne {
+        display: block;
+    }
 }
 
 .case {
@@ -27,12 +39,48 @@
     border-radius: 5px;
 }
 
+@media screen and (min-width: 768px) {
+    .case {
+        display: block;
+        position: absolute;
+    }
+}
+
 .presentation {
     background-color: rgb(230, 142, 36);
 }
 
+@media screen and (min-width: 768px) {
+    .presentation {
+        top: 7vh;
+        left: -50vw;
+        width: 100vw;
+        height: 47vh;
+        clip-path: polygon(50% 0, 100% 0, 100% 100%);
+        z-index: 5;
+    }
+    .titre_presentation {
+        position: fixed;
+        top: 10%;
+        left: 20%;
+    }
+}
+
 .etudes {
     background-color: rgb(19, 31, 17);
+}
+
+@media screen and (min-width: 768px) {
+    .etudes {
+        width: 100vw;
+        height: 47vh;
+        clip-path: polygon(50% 0, 50% 100%, 100% 100%);
+    }
+    .titre_etudes {
+        position: fixed;
+        top: 40%;
+        left: 60%;
+    }
 }
 
 .experiences_professionnelles {
@@ -43,6 +91,22 @@
     background-color: rgb(250, 213, 207);
 }
 
+@media screen and (min-width: 768px) {
+    .experiences_additionnelles {
+        top: 54vh;
+        left: -50vw;
+        width: 100vw;
+        height: 46vh;
+        clip-path: polygon(100% 0, 50% 100%, 100% 100%);
+        z-index: 5;
+    }
+    .titre_experiences_additionnelles {
+        position: fixed;
+        top: 90%;
+        left: 25%;
+    }
+}
+
 .centres_d_interets {
     background-color: rgb(241, 107, 36);
 }
@@ -51,12 +115,41 @@
     background-color: rgb(124, 86, 1);
 }
 
+@media screen and (min-width: 768px) {
+    .competences {
+        top: 54vh;
+        width: 100vw;
+        height: 46vh;
+        clip-path: polygon(50% 0, 50% 100%, 100% 100%);
+    }
+    .titre_competences {
+        position: fixed;
+        top: 90%;
+        left: 60%;
+    }
+}
+
 .book {
     background-color: rgb(0, 111, 83);
 }
 
 .contact {
     background-color: rgb(246, 178, 159);
+}
+
+@media screen and (min-width: 768px) {
+    .contact {
+        top: 7vh;
+        left: -50vw;
+        width: 100vw;
+        height: 47vh;
+        clip-path: polygon(50% 0, 50% 100%, 100% 100%);
+    }
+    .titre_contact {
+        position: fixed;
+        top: 40%;
+        left: 10%;
+    }
 }
 
 .domaine {
