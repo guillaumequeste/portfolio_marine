@@ -15,7 +15,7 @@ class Presentation extends Component {
         <Header />
         <div className="bodyPage">
           <En_tete />
-          <div className="details">
+          <div className="detailsPresentation">
             <p>presentation portfolio Marine</p>
             <a href={file} without rel="noopener noreferrer" target="_blank">
               <button trailingIcon="picture_as_pdf" label="Resume">

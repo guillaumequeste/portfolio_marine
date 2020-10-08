@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Header from "./Header";
 import Helmet from "./Helmet";
+import En_tete from "./En_tete";
 
 class Contact extends Component {
   constructor(props) {
@@ -118,123 +119,131 @@ class Contact extends Component {
         )
       );
   }
-
   render() {
     return (
-      <div className="bodyLogement">
+      <div>
         <Helmet
           title={"Contact Portfolio de Marine Queste, chef de projet"}
           link={"https://marinequeste.fr/contact"}
         />
         <Header />
-        <form className="container pb-5">
-          <h3 className="text-center pt-2">Contact</h3>
+        <div className="bodyPage">
+          <En_tete />
+          <div className="detailsContact">
+            <form className="container pb-5">
+              <h3 className="text-center pt-2">Contact</h3>
 
-          <div className="form-group">
-            <label htmlFor="nom">Nom</label>
-            <input
-              type="text"
-              className="form-control"
-              id="nom"
-              name="nom"
-              onChange={this.handleChangeNom}
-              placeholder="Nom"
-              required
-              value={this.state.nom}
-              error={this.state.errors.nom}
-            />
-            <span style={{ color: "red" }}>{this.state.errors.nom}</span>
+              <div className="form-group">
+                <label htmlFor="nom">Nom</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="nom"
+                  name="nom"
+                  onChange={this.handleChangeNom}
+                  placeholder="Nom"
+                  required
+                  value={this.state.nom}
+                  error={this.state.errors.nom}
+                />
+                <span style={{ color: "red" }}>{this.state.errors.nom}</span>
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="prenom">Prénom</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="prenom"
+                  name="prenom"
+                  onChange={this.handleChangePrenom}
+                  placeholder="Prénom"
+                  required
+                  value={this.state.prenom}
+                  error={this.state.errors.prenom}
+                />
+                <span style={{ color: "red" }}>{this.state.errors.prenom}</span>
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="email">Adresse mail</label>
+                <input
+                  type="email"
+                  className="form-control"
+                  id="email"
+                  name="email"
+                  onChange={this.handleChangeEmail}
+                  placeholder="Email"
+                  required
+                  value={this.state.email}
+                  error={this.state.errors.email}
+                />
+                <span style={{ color: "red" }}>{this.state.errors.email}</span>
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="telephone">N° de téléphone</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="telephone"
+                  name="telephone"
+                  onChange={this.handleChangeTelephone}
+                  placeholder="N° de téléphone"
+                  required
+                  value={this.state.telephone}
+                  error={this.state.errors.telephone}
+                />
+                <span style={{ color: "red" }}>
+                  {this.state.errors.telephone}
+                </span>
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="sujet">Sujet</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="sujet"
+                  name="sujet"
+                  onChange={this.handleChangeSujet}
+                  placeholder="Sujet"
+                  required
+                  value={this.state.sujet}
+                  error={this.state.errors.sujet}
+                />
+                <span style={{ color: "red" }}>{this.state.errors.sujet}</span>
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="message">Message</label>
+                <textarea
+                  className="form-control"
+                  id="message"
+                  name="message"
+                  onChange={this.handleChangeMessage}
+                  placeholder="Laisser votre message"
+                  required
+                  value={this.state.message}
+                  rows="4"
+                  error={this.state.errors.message}
+                />
+                <span style={{ color: "red" }}>
+                  {this.state.errors.message}
+                </span>
+              </div>
+
+              <div id="confirmation"></div>
+
+              <input
+                type="button"
+                className="btn btn-primary"
+                value="Envoyer"
+                onClick={this.handleSubmit}
+              />
+            </form>
           </div>
-
-          <div className="form-group">
-            <label htmlFor="prenom">Prénom</label>
-            <input
-              type="text"
-              className="form-control"
-              id="prenom"
-              name="prenom"
-              onChange={this.handleChangePrenom}
-              placeholder="Prénom"
-              required
-              value={this.state.prenom}
-              error={this.state.errors.prenom}
-            />
-            <span style={{ color: "red" }}>{this.state.errors.prenom}</span>
-          </div>
-
-          <div className="form-group">
-            <label htmlFor="email">Adresse mail</label>
-            <input
-              type="email"
-              className="form-control"
-              id="email"
-              name="email"
-              onChange={this.handleChangeEmail}
-              placeholder="Email"
-              required
-              value={this.state.email}
-              error={this.state.errors.email}
-            />
-            <span style={{ color: "red" }}>{this.state.errors.email}</span>
-          </div>
-
-          <div className="form-group">
-            <label htmlFor="telephone">N° de téléphone</label>
-            <input
-              type="text"
-              className="form-control"
-              id="telephone"
-              name="telephone"
-              onChange={this.handleChangeTelephone}
-              placeholder="N° de téléphone"
-              required
-              value={this.state.telephone}
-              error={this.state.errors.telephone}
-            />
-            <span style={{ color: "red" }}>{this.state.errors.telephone}</span>
-          </div>
-
-          <div className="form-group">
-            <label htmlFor="sujet">Sujet</label>
-            <input
-              type="text"
-              className="form-control"
-              id="sujet"
-              name="sujet"
-              onChange={this.handleChangeSujet}
-              placeholder="Sujet"
-              required
-              value={this.state.sujet}
-              error={this.state.errors.sujet}
-            />
-            <span style={{ color: "red" }}>{this.state.errors.sujet}</span>
-          </div>
-
-          <div className="form-group">
-            <label htmlFor="message">Message</label>
-            <textarea
-              className="form-control"
-              id="message"
-              name="message"
-              onChange={this.handleChangeMessage}
-              placeholder="Laisser votre message"
-              required
-              value={this.state.message}
-              rows="4"
-              error={this.state.errors.message}
-            />
-            <span style={{ color: "red" }}>{this.state.errors.message}</span>
-          </div>
-
-          <div id="confirmation"></div>
-
-          <input
-            type="button"
-            className="btn btn-primary"
-            value="Envoyer"
-            onClick={this.handleSubmit}
-          />
-        </form>
+        </div>
       </div>
     );
   }

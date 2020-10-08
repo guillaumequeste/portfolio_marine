@@ -19,6 +19,16 @@
     src: url('./fonts/Futurist.ttf') format('truetype')
 }
 
+@font-face {
+    font-family: 'Microsoft';
+    src: url('./fonts/Microsoft.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'Palatino';
+    src: url('./fonts/Palatino.ttf') format('truetype')
+}
+
 
 /* App */
 
@@ -47,6 +57,7 @@
 }
 
 .app {
+    margin-top: 7vh;
     height: 93vh;
     width: 100vw;
     background-color: rgb(2, 34, 102);
@@ -272,10 +283,16 @@
 }
 
 .nav-link {
-    background-color: rgba(255, 255, 255, 0);
+    background-color: white;
     z-index: 100 !important;
     color: rgb(89, 13, 43) !important;
     font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+    .nav-link {
+        background-color: rgba(255, 255, 255, 0);
+    }
 }
 
 
@@ -287,7 +304,7 @@
 }
 
 
-/* Presentation */
+/* En_tete */
 
 .nomPrenom {
     height: 12vh;
@@ -357,19 +374,168 @@
     }
 }
 
-.details {
+
+/* Presentation */
+
+.detailsPresentation {
     background-color: var(--color-presentation);
     height: 81vh;
 }
 
 @media screen and (min-width: 768px) {
-    .details {
+    .detailsPresentation {
         height: 78vh;
     }
 }
 
 @media screen and (min-width: 1300px) {
-    .details {
+    .detailsPresentation {
         height: 75vh;
     }
+}
+
+
+/* Etudes */
+
+.detailsEtudes {
+    background-color: var(--color-etudes);
+    height: 81vh;
+}
+
+@media screen and (min-width: 768px) {
+    .detailsEtudes {
+        height: 78vh;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .detailsEtudes {
+        height: 75vh;
+    }
+}
+
+
+/* Experiences professionnelles */
+
+.detailsExp_pro {
+    background-color: var(--color-experiences_professionnelles);
+    height: 81vh;
+}
+
+@media screen and (min-width: 768px) {
+    .detailsExp_pro {
+        height: 78vh;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .detailsExp_pro {
+        height: 75vh;
+    }
+}
+
+
+/* Centres d'interets */
+
+.detailsCentres {
+    background-color: var(--color-centres_d_interets);
+    height: 81vh;
+}
+
+@media screen and (min-width: 768px) {
+    .detailsCentres {
+        height: 78vh;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .detailsCentres {
+        height: 75vh;
+    }
+}
+
+
+/* Competences */
+
+.detailsCompetences {
+    background-color: var(--color-competences);
+    height: 81vh;
+}
+
+@media screen and (min-width: 768px) {
+    .detailsCompetences {
+        height: 78vh;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .detailsCompetences {
+        height: 75vh;
+    }
+}
+
+
+/* Experiences additionnelles */
+
+.detailsExp_add {
+    background-color: var(--color-experiences_additionnelles);
+    height: 81vh;
+}
+
+@media screen and (min-width: 768px) {
+    .detailsExp_add {
+        height: 78vh;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .detailsExp_add {
+        height: 75vh;
+    }
+}
+
+
+/* Book */
+
+.detailsBook {
+    background-color: var(--color-book);
+    height: 81vh;
+}
+
+@media screen and (min-width: 768px) {
+    .detailsBook {
+        height: 78vh;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .detailsBook {
+        height: 75vh;
+    }
+}
+
+
+/* Contact */
+
+.detailsContact {
+    background-color: var(--color-contact);
+    min-height: 81vh;
+}
+
+@media screen and (min-width: 768px) {
+    .detailsContact {
+        min-height: 78vh;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .detailsContact {
+        min-height: 75vh;
+    }
+}
+
+.sous-titre {
+    font-family: 'Microsoft', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
 }

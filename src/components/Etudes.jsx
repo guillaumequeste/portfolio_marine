@@ -1,6 +1,7 @@
-import React, { Component } from "react";
-import Header from "./Header";
-import Helmet from "./Helmet";
+import React, { Component } from "react"
+import Header from "./Header"
+import Helmet from "./Helmet"
+import En_tete from "./En_tete";
 
 class Etudes extends Component {
   render() {
@@ -11,8 +12,11 @@ class Etudes extends Component {
           link={"https://marinequeste.fr/etudes"}
         />
         <Header />
-        <div className="bodyContact">
-          <p>etudes</p>
+        <div className="bodyPage">
+          <En_tete />
+          <div className="detailsEtudes">
+            <p>études</p>
+          </div>
         </div>
       </div>
     );

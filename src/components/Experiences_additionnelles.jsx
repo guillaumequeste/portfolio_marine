@@ -1,6 +1,7 @@
-import React, { Component } from "react";
-import Header from "./Header";
-import Helmet from "./Helmet";
+import React, { Component } from "react"
+import Header from "./Header"
+import Helmet from "./Helmet"
+import En_tete from "./En_tete";
 
 class Experiences_additionnelles extends Component {
   render() {
@@ -11,8 +12,11 @@ class Experiences_additionnelles extends Component {
           link={"https://marinequeste.fr/experiences_additionnelles"}
         />
         <Header />
-        <div className="bodyContact">
-          <p>expériences additionnelles</p>
+        <div className="bodyPage">
+          <En_tete />
+          <div className="detailsExp_add">
+            <p>expériences additionnelles</p>
+          </div>
         </div>
       </div>
     );

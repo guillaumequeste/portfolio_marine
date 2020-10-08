@@ -18,9 +18,9 @@ const App = () => (
     
     <div className="app">
       <div className="ligne">
-        <Link to="/presentation" className="case presentation">
+        <Link to="/about_me" className="case presentation">
           <div className="domaine">
-            <p className="titre_domaine titre_presentation">Presentation</p>
+            <p className="titre_domaine titre_presentation">About me</p>
           </div>
         </Link>
         <Link to="/etudes" className="case etudes">
