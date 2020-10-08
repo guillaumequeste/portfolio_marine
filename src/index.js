@@ -36,7 +36,7 @@ const Root = () => (
       <Route path="/etudes" component={Etudes} />
       <Route path="/experiences_additionnelles" component={Experiences_additionnelles} />
       <Route path="/experiences_professionnelles" component={Experiences_professionnelles} />
-      <Route path="/presentation" component={Presentation} />
+      <Route path="/about_me" component={Presentation} />
 
       <Route path="/contact" component={Contact} />
       <Route path="/notfound" component={NotFound} />

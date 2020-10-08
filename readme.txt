@@ -9,3 +9,8 @@ git add -A
 git commit -m "presentation"
 git branch -M main
 git push -u origin main
+
+
+reste meta name description website created using create-react-app
+
+reformater : shift+alt+f

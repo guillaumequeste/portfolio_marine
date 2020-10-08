@@ -6,13 +6,13 @@ import { Link } from 'react-router-dom'
 
 const App = () => (
   <>
-    <Helmet title={"Accueil Découverte de la Normandie et du Littoral"}
-              link={"http://chevaux.guillaumequeste.fr"} />
+    <Helmet title={"Accueil Portfolio de Marine Queste, chef de projet"}
+              link={"https://marinequeste.fr"} />
     <Header />
 
     <div className="bodyPhoto">
       <div className="photo">
-        <img src={require("./img/marine2.jpg")} alt="photo" className="rounded-circle"></img>
+        <img src={require("./img/marine_queste.jpg")} alt="photo" className="rounded-circle"></img>
       </div>
     </div>
     
