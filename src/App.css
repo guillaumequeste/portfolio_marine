@@ -501,6 +501,21 @@
     margin-left: 1%;
 }
 
+.fontWeightBold {
+    font-weight: bold;
+}
+
+.whiteSpaceNormal {
+    white-space: normal;
+    padding-top: 5%;
+    color: grey;
+}
+
+.bBlack {
+    font-weight: bold;
+    color: black;
+}
+
 
 /* Centres d'interets */
 
