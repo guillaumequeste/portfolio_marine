@@ -295,9 +295,15 @@
     }
 }
 
+.activeAccueil {
+    background-color: transparent !important;
+    border: transparent !important;
+}
+
 .active {
     border: solid white;
     background-color: white;
+    height: 7vh;
 }
 
 
@@ -465,17 +471,20 @@
 .detailsCompetences {
     background-color: var(--color-competences);
     min-height: 170vh;
+    padding-top: 2%;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .detailsCompetences {
         min-height: 100vh;
+        padding-top: 2%;
     }
 }
 
 @media screen and (min-width: 1025px) {
     .detailsCompetences {
         min-height: 110vh;
+        padding-top: 0;
     }
 }
 
@@ -547,7 +556,7 @@
 
 .spanStar {
     line-height: 5vh;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .star {

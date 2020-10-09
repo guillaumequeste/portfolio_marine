@@ -374,7 +374,11 @@ class Competences extends Component {
                     </span>
                   </li>
                   <li className="liSousBloc">
-                    <h6 className="domaine">Filmona</h6>
+                  <img
+                      src={require("../img/filmora.png")}
+                      alt="star"
+                      className="logoMontage"
+                    ></img>
                     <span className="spanStar">
                       <img
                         src={require("../img/star.png")}
@@ -459,7 +463,11 @@ class Competences extends Component {
                     </span>
                   </li>
                   <li className="liSousBloc">
-                    <h6 className="domaine">Rhinoceros</h6>
+                  <img
+                      src={require("../img/rhinoceros.png")}
+                      alt="star"
+                      className="logoMontage"
+                    ></img>
                     <span className="spanStar">
                       <img
                         src={require("../img/star.png")}
@@ -497,7 +505,11 @@ class Competences extends Component {
                     </span>
                   </li>
                   <li className="liSousBloc">
-                    <h6 className="domaine">Cape</h6>
+                  <img
+                      src={require("../img/cape.png")}
+                      alt="star"
+                      className="logoMontage"
+                    ></img>
                     <span className="spanStar">
                       <img
                         src={require("../img/star.png")}

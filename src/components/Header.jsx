@@ -6,7 +6,7 @@ class Header extends Component {
         return (
             <div className="bodyHeader">
                 <nav className="navbar navbar-expand-lg navbar-light fixed-top backgroundNavbar">
-                    <NavLink className="navbar-brand" to="/">Accueil</NavLink>
+                    <NavLink className="navbar-brand activeAccueil" to="/">Accueil</NavLink>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
