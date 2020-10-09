@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Header from "./Header";
 import Helmet from "./Helmet";
-import En_tete from "./En_tete";
+import EnTete from "./EnTete";
 
 class Contact extends Component {
   constructor(props) {
@@ -128,7 +128,7 @@ class Contact extends Component {
         />
         <Header />
         <div className="bodyPage">
-          <En_tete />
+          <EnTete />
           <div className="detailsContact">
             <form className="container pb-5">
               <h3 className="text-center pt-2">Contact</h3>

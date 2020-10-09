@@ -1,7 +1,7 @@
-import React, { Component } from "react"
-import Header from "./Header"
-import Helmet from "./Helmet"
-import En_tete from "./En_tete";
+import React, { Component } from "react";
+import Header from "./Header";
+import Helmet from "./Helmet";
+import EnTete from "./EnTete";
 
 class Etudes extends Component {
   render() {
@@ -13,9 +13,29 @@ class Etudes extends Component {
         />
         <Header />
         <div className="bodyPage">
-          <En_tete />
+          <EnTete />
           <div className="detailsEtudes">
-            <p>études</p>
+          <div className="etude">
+              <div className="imgEtude"></div>
+              <div className="texteEtude">
+                <p className="pEtude">,yryj</p>
+                <p className="pEtude">vze ljfrfrnvl j,r</p>
+              </div>
+            </div>
+            <div className="etude">
+              <div className="imgEtude"></div>
+              <div className="texteEtude">
+                <p className="pEtude">,yryj</p>
+                <p className="pEtude">vze ljfrfrnvl j,r</p>
+              </div>
+            </div>
+            <div className="etude">
+              <div className="imgEtude"></div>
+              <div className="texteEtude">
+                <p className="pEtude">tyujt</p>
+                <p className="pEtude">dfgn ljfnvl kzhfghbi</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

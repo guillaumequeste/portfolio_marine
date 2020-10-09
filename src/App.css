@@ -425,6 +425,36 @@
     }
 }
 
+.etude {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    height: 22vh;
+    padding: 2%;
+}
+
+.imgEtude {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    float: left;
+}
+
+@media screen and (min-width: 1300px) {
+    .imgEtude {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.texteEtude {
+    padding-left: 2%;
+}
+
+.pEtude {
+    margin: 0;
+}
+
 
 /* Experiences professionnelles */
 
@@ -454,6 +484,21 @@
 
 .titres {
     color: black;
+}
+
+.titreLong {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+    .titreLong {
+        flex-direction: row;
+    }
+}
+
+.titreLong2 {
+    margin-left: 1%;
 }
 
 

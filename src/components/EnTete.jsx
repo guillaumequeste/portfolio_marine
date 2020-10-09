@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class En_tete extends Component {
+class EnTete extends Component {
     render () {
         return (
             <div className="nomPrenom">
@@ -11,4 +11,4 @@ class En_tete extends Component {
     }
 }
 
-export default En_tete
+export default EnTete

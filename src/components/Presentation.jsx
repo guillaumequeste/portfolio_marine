@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Header from "./Header";
-import En_tete from "./En_tete";
+import EnTete from "./EnTete";
 import file from "../docs/CVGuillaumeQueste.pdf";
 import Helmet from "./Helmet";
 
@@ -14,7 +14,7 @@ class Presentation extends Component {
         />
         <Header />
         <div className="bodyPage">
-          <En_tete />
+          <EnTete />
           <div className="detailsPresentation">
             <p>presentation portfolio Marine</p>
             <a href={file} without rel="noopener noreferrer" target="_blank">

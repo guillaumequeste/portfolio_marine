@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import Header from "./Header"
 import Helmet from "./Helmet"
-import En_tete from "./En_tete";
+import EnTete from "./EnTete";
 
 class Book extends Component {
   render() {
@@ -13,7 +13,7 @@ class Book extends Component {
         />
         <Header />
         <div className="bodyPage">
-          <En_tete />
+          <EnTete />
           <div className="detailsBook">
             <p>book</p>
           </div>

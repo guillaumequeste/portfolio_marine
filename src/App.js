@@ -12,7 +12,7 @@ const App = () => (
 
     <div className="bodyPhoto">
       <div className="photo">
-        <img src={require("./img/marine_queste.jpg")} alt="photo" className="rounded-circle"></img>
+        <img src={require("./img/marine_queste.jpg")} alt="profil" className="rounded-circle"></img>
       </div>
     </div>
     

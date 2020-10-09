@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Header from "./Header";
 import Helmet from "./Helmet";
-import En_tete from "./En_tete";
+import EnTete from "./EnTete";
 
 class Competences extends Component {
   render() {
@@ -13,7 +13,7 @@ class Competences extends Component {
         />
         <Header />
         <div className="bodyPage">
-          <En_tete />
+          <EnTete />
           <div className="detailsCompetences">
             <div className="bloc">
               <div className="sous-bloc">
