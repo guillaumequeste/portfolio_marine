@@ -459,19 +459,75 @@
 
 .detailsCompetences {
     background-color: var(--color-competences);
-    height: 81vh;
+    min-height: 110vh;
 }
 
 @media screen and (min-width: 768px) {
     .detailsCompetences {
-        height: 78vh;
+        min-height: 80vh;
     }
 }
 
-@media screen and (min-width: 1300px) {
-    .detailsCompetences {
-        height: 75vh;
+.bloc {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+    .bloc {
+        flex-direction: row;
     }
+}
+
+.sous-bloc {
+    width: 100%;
+    height: 20vh;
+    padding-top: 2%;
+    margin-bottom: 2%;
+}
+
+@media screen and (min-width: 768px) {
+    .sous-bloc {
+        height: 22vh;
+        padding-left: 2%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .sous-bloc {
+        padding-left: 5%;
+    }
+}
+
+.titreDomaine {
+    margin-left: 5%;
+    color: white;
+}
+
+.liSousBloc {
+    list-style: none;
+    height: 5vh;
+}
+
+.domaine {
+    display: inline-block;
+    line-height: 5vh;
+    width: 100px;
+    color: white;
+}
+
+.spanStar {
+    line-height: 5vh;
+    margin-right: 20px;
+}
+
+.star {
+    width: 20px;
+    line-height: 15vh;
+}
+
+.jaune {
+    filter: hue-rotate(180deg);
 }
 
 
