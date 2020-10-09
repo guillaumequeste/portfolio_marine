@@ -295,6 +295,11 @@
     }
 }
 
+.active {
+    border: solid white;
+    background-color: white;
+}
+
 
 /* Page */
 
@@ -459,12 +464,18 @@
 
 .detailsCompetences {
     background-color: var(--color-competences);
-    min-height: 110vh;
+    min-height: 170vh;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .detailsCompetences {
-        min-height: 80vh;
+        min-height: 100vh;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .detailsCompetences {
+        min-height: 110vh;
     }
 }
 
@@ -481,14 +492,14 @@
 
 .sous-bloc {
     width: 100%;
-    height: 20vh;
+    height: 30vh;
     padding-top: 2%;
-    margin-bottom: 2%;
+    margin-bottom: 4%;
 }
 
 @media screen and (min-width: 768px) {
     .sous-bloc {
-        height: 22vh;
+        height: 27vh;
         padding-left: 2%;
     }
 }
@@ -506,14 +517,32 @@
 
 .liSousBloc {
     list-style: none;
-    height: 5vh;
+    height: 8vh;
 }
 
 .domaine {
     display: inline-block;
-    line-height: 5vh;
+    line-height: 8vh;
     width: 100px;
     color: white;
+}
+
+.logo {
+    width: 50px;
+    border: solid 1px white;
+    margin-right: 30px;
+}
+
+.logoOffice {
+    width: 50px;
+    border: solid 1px white;
+    margin-right: 50px;
+}
+
+.logoMontage {
+    width: 50px;
+    border: solid 1px white;
+    margin-right: 50px;
 }
 
 .spanStar {
