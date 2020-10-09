@@ -430,19 +430,30 @@
 
 .detailsExp_pro {
     background-color: var(--color-experiences_professionnelles);
-    height: 81vh;
+    min-height: 81vh;
+    padding: 5% 0 5% 0;
 }
 
 @media screen and (min-width: 768px) {
     .detailsExp_pro {
-        height: 78vh;
+        min-height: 78vh;
     }
 }
 
 @media screen and (min-width: 1300px) {
     .detailsExp_pro {
-        height: 75vh;
+        min-height: 75vh;
     }
+}
+
+@media screen and (min-width: 768px) {
+    .vertical-timeline-element--work {
+        color: white;
+    }
+}
+
+.titres {
+    color: black;
 }
 
 
