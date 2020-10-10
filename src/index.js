@@ -16,7 +16,7 @@ import Competences from './components/Competences'
 import Etudes from './components/Etudes'
 import Experiences_additionnelles from './components/Experiences_additionnelles'
 import Experiences_professionnelles from './components/Experiences_professionnelles'
-import Presentation from './components/Presentation'
+import About_Me from './components/About_Me'
 import Contact from './components/Contact'
 import NotFound from './components/NotFound'
 
@@ -30,13 +30,13 @@ const Root = () => (
     <Switch>
       <Route exact path="/" component={App} />
 
+      <Route path="/about_me" component={About_Me} />
       <Route path="/book" component={Book} />
       <Route path="/centres_d_interets" component={Centres_d_interets} />
       <Route path="/competences" component={Competences} />
       <Route path="/etudes" component={Etudes} />
       <Route path="/experiences_additionnelles" component={Experiences_additionnelles} />
       <Route path="/experiences_professionnelles" component={Experiences_professionnelles} />
-      <Route path="/about_me" component={Presentation} />
 
       <Route path="/contact" component={Contact} />
       <Route path="/notfound" component={NotFound} />

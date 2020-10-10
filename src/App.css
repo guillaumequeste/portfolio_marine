@@ -30,6 +30,110 @@
 }
 
 
+/* Page */
+
+.bodyPage {
+    margin-top: 7vh;
+    min-height: 93vh;
+}
+
+
+/* About me */
+
+.detailsPresentation {
+    background-color: var(--color-presentation);
+    min-height: 81vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 61vh;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .photoMarine {
+        width: 30vw;
+    }
+    .description {
+        width: 70vw;
+    }
+}
+
+.liens {
+    display: flex;
+    flex-direction: column;
+    min-height: 20vh;
+}
+
+@media screen and (min-width: 768px) {
+    .liens {
+        flex-direction: row;
+    }
+}
+
+.adresse {
+    display: flex;
+}
+
+@media screen and (min-width: 768px) {
+    .adresse {
+        width: 50vw;
+    }
+    .comptes {
+        width: 50vw;
+    }
+}
+
+.detailsAdresse {
+    margin: auto;
+}
+
+.pAdresse {
+    margin: 0;
+}
+
+.comptes {
+    display: flex;
+}
+
+.detailsComptes {
+    margin: auto;
+}
+
+.facebook {
+    width: 20px;
+    background: rgb(66, 103, 178);
+}
+
+.instagram {
+    width: 20px;
+}
+
+.linkedin {
+    width: 20px;
+    background: rgb(40, 103, 178);
+}
+
+@media screen and (min-width: 768px) {
+    .facebook {
+        width: 50px;
+    }
+    .instagram {
+        width: 50px;
+    }
+    .linkedin {
+        width: 50px;
+    }
+}
+
+
 /* App */
 
 .bodyPhoto {
@@ -275,253 +379,23 @@
 }
 
 
-/* Header */
+/* Book */
 
-.navbar {
-    height: 7vh;
-    z-index: 100 !important;
-}
-
-.backgroundNavbar {
-    background-image: url("img/fond_50.jpg");
-    background-size: cover;
-    background-position: 25% 75%;
-}
-
-.nav-link {
-    background-color: white;
-    z-index: 100 !important;
-    color: rgb(89, 13, 43) !important;
-    font-weight: bold;
-}
-
-@media screen and (min-width: 768px) {
-    .nav-link {
-        background-color: rgba(255, 255, 255, 0);
-    }
-}
-
-.activeAccueil {
-    background-color: transparent !important;
-    border: transparent !important;
-}
-
-.active {
-    border: solid white;
-    background-color: white;
-    height: 7vh;
-}
-
-
-/* Page */
-
-.bodyPage {
-    margin-top: 7vh;
-    min-height: 93vh;
-}
-
-
-/* En_tete */
-
-.nomPrenom {
-    height: 12vh;
-    text-align: center;
-    margin: 0;
-    display: flex;
-}
-
-@media screen and (min-width: 768px) {
-    .nomPrenom {
-        height: 15vh;
-    }
-}
-
-@media screen and (min-width: 1300px) {
-    .nomPrenom {
-        height: 18vh;
-    }
-}
-
-.titreEnTete {
-    margin: auto;
-}
-
-.titre_nomPrenom {
-    font-family: 'Hearth_Stone', sans-serif;
-    font-size: 1.2em;
-    padding: 4% 0 4% 0;
-    border: solid 1px;
-    border-top: unset;
-    border-right: unset;
-    border-left: unset;
-}
-
-@media screen and (min-width: 768px) {
-    .titre_nomPrenom {
-        font-size: 2.2em;
-    }
-}
-
-.intitule {
-    font-family: 'Futurist', sans-serif;
-    font-size: 8px;
-    padding-top: 0;
-}
-
-@media screen and (min-width: 768px) {
-    .intitule {
-        font-size: 15px;
-    }
-}
-
-@media screen and (min-width: 1300px) {
-    .intitule {
-        padding-top: 0;
-        font-size: 1em;
-    }
-}
-
-
-/* Presentation */
-
-.detailsPresentation {
-    background-color: var(--color-presentation);
+.detailsBook {
+    background-color: var(--color-book);
     height: 81vh;
 }
 
 @media screen and (min-width: 768px) {
-    .detailsPresentation {
+    .detailsBook {
         height: 78vh;
     }
 }
 
 @media screen and (min-width: 1300px) {
-    .detailsPresentation {
+    .detailsBook {
         height: 75vh;
     }
-}
-
-
-/* Etudes */
-
-.detailsEtudes {
-    background-color: var(--color-etudes);
-    height: 81vh;
-}
-
-@media screen and (min-width: 768px) {
-    .detailsEtudes {
-        height: 78vh;
-    }
-}
-
-@media screen and (min-width: 1300px) {
-    .detailsEtudes {
-        height: 75vh;
-    }
-}
-
-.etude {
-    display: flex;
-    flex-direction: row;
-    color: white;
-    height: 22vh;
-    padding: 2%;
-}
-
-.imgEtude {
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    float: left;
-}
-
-@media screen and (min-width: 1300px) {
-    .imgEtude {
-        width: 100px;
-        height: 100px;
-    }
-}
-
-.texteEtude {
-    padding-left: 2%;
-}
-
-.pEtude {
-    margin: 0;
-}
-
-
-/* Experiences professionnelles */
-
-.detailsExp_pro {
-    background-color: var(--color-experiences_professionnelles);
-    min-height: 81vh;
-    padding: 5% 0 5% 0;
-}
-
-@media screen and (min-width: 768px) {
-    .detailsExp_pro {
-        min-height: 78vh;
-    }
-}
-
-@media screen and (min-width: 1300px) {
-    .detailsExp_pro {
-        min-height: 75vh;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .vertical-timeline-element--work {
-        color: white;
-    }
-}
-
-@media screen and (max-width: 319px) {
-    .vertical-timeline-element-title {
-        font-size: 0.8rem;
-    }
-}
-
-.titres {
-    color: black;
-}
-
-.titreLong {
-    display: flex;
-    flex-direction: column;
-}
-
-@media screen and (min-width: 768px) {
-    .titreLong {
-        flex-direction: row;
-    }
-}
-
-.titreLong2 {
-    margin-left: 1%;
-}
-
-@media screen and (max-width: 319px) {
-    .titreLong2 {
-        font-size: 0.8rem;
-    }
-}
-
-.fontWeightBold {
-    font-weight: bold;
-}
-
-.whiteSpaceNormal {
-    white-space: normal;
-    padding-top: 5%;
-    color: grey;
-}
-
-.bBlack {
-    font-weight: bold;
-    color: black;
 }
 
 
@@ -661,46 +535,6 @@
 }
 
 
-/* Experiences additionnelles */
-
-.detailsExp_add {
-    background-color: var(--color-experiences_additionnelles);
-    height: 81vh;
-}
-
-@media screen and (min-width: 768px) {
-    .detailsExp_add {
-        height: 78vh;
-    }
-}
-
-@media screen and (min-width: 1300px) {
-    .detailsExp_add {
-        height: 75vh;
-    }
-}
-
-
-/* Book */
-
-.detailsBook {
-    background-color: var(--color-book);
-    height: 81vh;
-}
-
-@media screen and (min-width: 768px) {
-    .detailsBook {
-        height: 78vh;
-    }
-}
-
-@media screen and (min-width: 1300px) {
-    .detailsBook {
-        height: 75vh;
-    }
-}
-
-
 /* Contact */
 
 .detailsContact {
@@ -724,4 +558,235 @@
     font-family: 'Microsoft', sans-serif;
     font-size: 2em;
     font-weight: bold;
+}
+
+
+/* En_tete */
+
+.nomPrenom {
+    min-height: 12vh;
+    text-align: center;
+    margin: 0;
+    display: flex;
+}
+
+.titreEnTete {
+    margin: auto;
+}
+
+.titre_nomPrenom {
+    font-family: 'Hearth_Stone', sans-serif;
+    font-size: 1.2em;
+    padding: 4% 0 4% 0;
+    border: solid 1px;
+    border-top: unset;
+    border-right: unset;
+    border-left: unset;
+}
+
+@media screen and (min-width: 768px) {
+    .titre_nomPrenom {
+        font-size: 2.2em;
+        padding-top: 7%;
+    }
+}
+
+.intitule {
+    font-family: 'Futurist', sans-serif;
+    font-size: 8px;
+    padding-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .intitule {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .intitule {
+        padding-top: 0;
+        font-size: 1em;
+    }
+}
+
+
+/* Etudes */
+
+.detailsEtudes {
+    background-color: var(--color-etudes);
+    height: 81vh;
+}
+
+@media screen and (min-width: 768px) {
+    .detailsEtudes {
+        height: 78vh;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .detailsEtudes {
+        height: 75vh;
+    }
+}
+
+.etude {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    height: 22vh;
+    padding: 2%;
+}
+
+.imgEtude {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    float: left;
+}
+
+@media screen and (min-width: 1300px) {
+    .imgEtude {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.texteEtude {
+    padding-left: 2%;
+}
+
+.pEtude {
+    margin: 0;
+}
+
+
+/* Experiences additionnelles */
+
+.detailsExp_add {
+    background-color: var(--color-experiences_additionnelles);
+    height: 81vh;
+}
+
+@media screen and (min-width: 768px) {
+    .detailsExp_add {
+        height: 78vh;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .detailsExp_add {
+        height: 75vh;
+    }
+}
+
+
+/* Experiences professionnelles */
+
+.detailsExp_pro {
+    background-color: var(--color-experiences_professionnelles);
+    min-height: 81vh;
+    padding: 5% 0 5% 0;
+}
+
+@media screen and (min-width: 768px) {
+    .detailsExp_pro {
+        min-height: 78vh;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .detailsExp_pro {
+        min-height: 75vh;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .vertical-timeline-element--work {
+        color: white;
+    }
+}
+
+@media screen and (max-width: 319px) {
+    .vertical-timeline-element-title {
+        font-size: 0.8rem;
+    }
+}
+
+.titres {
+    color: black;
+}
+
+.titreLong {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+    .titreLong {
+        flex-direction: row;
+    }
+}
+
+.titreLong2 {
+    margin-left: 1%;
+}
+
+@media screen and (max-width: 319px) {
+    .titreLong2 {
+        font-size: 0.8rem;
+    }
+}
+
+.fontWeightBold {
+    font-weight: bold;
+}
+
+.whiteSpaceNormal {
+    white-space: normal;
+    padding-top: 5%;
+    color: grey;
+}
+
+.bBlack {
+    font-weight: bold;
+    color: black;
+}
+
+
+/* Header */
+
+.navbar {
+    height: 7vh;
+    z-index: 100 !important;
+}
+
+.backgroundNavbar {
+    background-image: url("img/fond_50.jpg");
+    background-size: cover;
+    background-position: 25% 75%;
+}
+
+.nav-link {
+    background-color: white;
+    z-index: 100 !important;
+    color: rgb(89, 13, 43) !important;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+    .nav-link {
+        background-color: rgba(255, 255, 255, 0);
+    }
+}
+
+.activeAccueil {
+    background-color: transparent !important;
+    border: transparent !important;
+}
+
+.active {
+    border: solid white;
+    background-color: white;
+    height: 7vh;
 }
