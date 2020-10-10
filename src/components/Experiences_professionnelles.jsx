@@ -16,7 +16,8 @@ class Experiences_professionnelles extends Component {
       details2: false,
       details3: false,
       details4: false,
-      details5: false
+      details5: false,
+      details6: false
     };
     this.clicDetails1Plus = this.clicDetails1Plus.bind(this);
     this.clicDetails1Moins = this.clicDetails1Moins.bind(this);
@@ -28,6 +29,8 @@ class Experiences_professionnelles extends Component {
     this.clicDetails4Moins = this.clicDetails4Moins.bind(this);
     this.clicDetails5Plus = this.clicDetails5Plus.bind(this);
     this.clicDetails5Moins = this.clicDetails5Moins.bind(this);
+    this.clicDetails6Plus = this.clicDetails6Plus.bind(this);
+    this.clicDetails6Moins = this.clicDetails6Moins.bind(this);
   }
 
   clicDetails1Plus() {
@@ -87,6 +90,18 @@ class Experiences_professionnelles extends Component {
   clicDetails5Moins() {
     this.setState({
       details5: false
+    });
+  }
+
+  clicDetails6Plus() {
+    this.setState({
+      details6: true
+    });
+  }
+
+  clicDetails6Moins() {
+    this.setState({
+      details6: false
     });
   }
 
@@ -181,6 +196,24 @@ class Experiences_professionnelles extends Component {
       fontSize: "1.5em"
     };
 
+    let divDetails6 = { display: "none", textAlign: "left" };
+    let buttonDetails6Plus = {
+      display: "block",
+      borderRadius: "5px",
+      backgroundColor: "rgb(2, 62, 24)",
+      color: "white",
+      fontWeight: "bold",
+      fontSize: "1.5em"
+    };
+    let buttonDetails6Moins = {
+      display: "none",
+      borderRadius: "5px",
+      backgroundColor: "rgb(2, 62, 24)",
+      color: "white",
+      fontWeight: "bold",
+      fontSize: "1.5em"
+    };
+
     if (this.state.details1 === true) {
       divDetails1.display = "block";
       buttonDetails1Plus.display = "none";
@@ -205,6 +238,16 @@ class Experiences_professionnelles extends Component {
       divDetails5.display = "block";
       buttonDetails5Plus.display = "none";
       buttonDetails5Moins.display = "block";
+    }
+    if (this.state.details6 === true) {
+      divDetails6.display = "block";
+      buttonDetails6Plus.display = "none";
+      buttonDetails6Moins.display = "block";
+    }
+    if (this.state.details6 === true) {
+      divDetails6.display = "block";
+      buttonDetails6Plus.display = "none";
+      buttonDetails6Moins.display = "block";
     }
 
     return (
@@ -237,12 +280,12 @@ class Experiences_professionnelles extends Component {
                       <p className="lieu">? (?)</p>
                     </div>
                     <button
-                      onClick={this.clicDetails4Plus}
-                      style={buttonDetails4Plus}
+                      onClick={this.clicDetails5Plus}
+                      style={buttonDetails5Plus}
                     >
                       +
                     </button>
-                    <ul style={divDetails4}>
+                    <ul style={divDetails5}>
                       <li className="whiteSpaceNormal">
                         <span className="bBlack">*****</span> *******
                       </li>
@@ -259,8 +302,8 @@ class Experiences_professionnelles extends Component {
                       <li className="whiteSpaceNormal">********</li>
                     </ul>
                     <button
-                      onClick={this.clicDetails4Moins}
-                      style={buttonDetails4Moins}
+                      onClick={this.clicDetails5Moins}
+                      style={buttonDetails5Moins}
                     >
                       -
                     </button>
@@ -330,7 +373,7 @@ class Experiences_professionnelles extends Component {
                         <span className="bBlack">flexibilité</span>.
                       </li>
                       <li className="whiteSpaceNormal">
-                        <span className="bBlack">* d'évènements</span> :
+                        <span className="bBlack">Organisation d'évènements</span> :
                         <ul>
                           <li>
                             Journées portes ouvertes (invitations, location de
@@ -378,15 +421,15 @@ class Experiences_professionnelles extends Component {
                           bureau d'études
                         </h6>
                       </div>
-                      <p className="lieu">?</p>
+                      <p className="lieu">Smurfit Kappa (34)</p>
                     </div>
                     <button
-                      onClick={this.clicDetails4Plus}
-                      style={buttonDetails4Plus}
+                      onClick={this.clicDetails3Plus}
+                      style={buttonDetails3Plus}
                     >
                       +
                     </button>
-                    <ul style={divDetails4}>
+                    <ul style={divDetails3}>
                       <li className="whiteSpaceNormal">
                         <span className="bBlack">Pilotage de projets</span> pour
                         de nombreux clients (Haribo, McCormick, Nestlé
@@ -408,8 +451,8 @@ class Experiences_professionnelles extends Component {
                       </li>
                     </ul>
                     <button
-                      onClick={this.clicDetails4Moins}
-                      style={buttonDetails4Moins}
+                      onClick={this.clicDetails3Moins}
+                      style={buttonDetails3Moins}
                     >
                       -
                     </button>
@@ -418,7 +461,7 @@ class Experiences_professionnelles extends Component {
 
                 <VerticalTimelineElement
                   className="vertical-timeline-element--work"
-                  date="septembre 2010 - septembre 2014"
+                  date="septembre 2010 - septembre 2011"
                   iconStyle={{ background: "rgb(241, 107, 36)", color: "#fff" }}
                 >
                   <div className="badge">
@@ -432,15 +475,15 @@ class Experiences_professionnelles extends Component {
                           bureau d'études
                         </h6>
                       </div>
-                      <p className="lieu">? (Bedford, Grande-Bretagne)</p>
+                      <p className="lieu">Massmould (Bedford, Grande-Bretagne)</p>
                     </div>
                     <button
-                      onClick={this.clicDetails4Plus}
-                      style={buttonDetails4Plus}
+                      onClick={this.clicDetails2Plus}
+                      style={buttonDetails2Plus}
                     >
                       +
                     </button>
-                    <ul style={divDetails4}>
+                    <ul style={divDetails2}>
                       <li className="whiteSpaceNormal">
                         <span className="bBlack">
                           Rédaction de process machines
@@ -464,8 +507,8 @@ class Experiences_professionnelles extends Component {
                       </li>
                     </ul>
                     <button
-                      onClick={this.clicDetails4Moins}
-                      style={buttonDetails4Moins}
+                      onClick={this.clicDetails2Moins}
+                      style={buttonDetails2Moins}
                     >
                       -
                     </button>
@@ -491,12 +534,12 @@ class Experiences_professionnelles extends Component {
                       <p className="lieu">Nestlé (76)</p>
                     </div>
                     <button
-                      onClick={this.clicDetails4Plus}
-                      style={buttonDetails4Plus}
+                      onClick={this.clicDetails1Plus}
+                      style={buttonDetails1Plus}
                     >
                       +
                     </button>
-                    <ul style={divDetails4}>
+                    <ul style={divDetails1}>
                       <li className="whiteSpaceNormal">
                         <span className="bBlack">Contrôle qualité</span> des
                         produits de production (capsules, pots en verre,
@@ -507,7 +550,7 @@ class Experiences_professionnelles extends Component {
                           Essais sur ligne de production
                         </span>{" "}
                         pour la mise en place d'un nouveau produit (tests
-                        operculage, détection de *, passages sur machine...).
+                        operculage, détection de métaux, passages sur machine...).
                       </li>
                       <li className="whiteSpaceNormal">
                         <span className="bBlack">Management</span> d'une équipe
@@ -516,8 +559,48 @@ class Experiences_professionnelles extends Component {
                       </li>
                     </ul>
                     <button
-                      onClick={this.clicDetails4Moins}
-                      style={buttonDetails4Moins}
+                      onClick={this.clicDetails1Moins}
+                      style={buttonDetails1Moins}
+                    >
+                      -
+                    </button>
+                  </div>
+                </VerticalTimelineElement>
+
+                <VerticalTimelineElement
+                  className="vertical-timeline-element--work"
+                  date="vacances d'été, Noël, Pâques de 2005 à 2009"
+                  iconStyle={{
+                    background: "rgb(2, 62, 24)",
+                    color: "#fff"
+                  }}
+                >
+                  <div className="badge">
+                    <div className="titres">
+                      <div className="titreLong">
+                        <h6 className="vertical-timeline-element-title fontWeightBold">
+                          Employée polyvalente
+                        </h6>
+                      </div>
+                      <p className="lieu">Auchan (76)</p>
+                    </div>
+                    <button
+                      onClick={this.clicDetails6Plus}
+                      style={buttonDetails6Plus}
+                    >
+                      +
+                    </button>
+                    <ul style={divDetails6}>
+                      <li className="whiteSpaceNormal">
+                        <span className="bBlack">Manutention</span> : remplissage de différents rayons, <span className="bBlack">organisation du stock</span>, étiquetage en magasin...
+                      </li>
+                      <li className="whiteSpaceNormal">
+                        Renseigner les clients.
+                      </li>
+                    </ul>
+                    <button
+                      onClick={this.clicDetails6Moins}
+                      style={buttonDetails6Moins}
                     >
                       -
                     </button>
