@@ -320,8 +320,8 @@
 .nomPrenom {
     height: 12vh;
     text-align: center;
-    padding-top: 5%;
     margin: 0;
+    display: flex;
 }
 
 @media screen and (min-width: 768px) {
@@ -332,17 +332,19 @@
 
 @media screen and (min-width: 1300px) {
     .nomPrenom {
-        padding-top: 2%;
         height: 18vh;
     }
 }
 
+.titreEnTete {
+    margin: auto;
+}
+
 .titre_nomPrenom {
     font-family: 'Hearth_Stone', sans-serif;
-    font-size: 1em;
-    padding: 0 0 2% 0;
+    font-size: 1.2em;
+    padding: 4% 0 4% 0;
     border: solid 1px;
-    margin: 0 30% 0 30%;
     border-top: unset;
     border-right: unset;
     border-left: unset;
@@ -350,37 +352,25 @@
 
 @media screen and (min-width: 768px) {
     .titre_nomPrenom {
-        font-size: 2em;
-    }
-}
-
-@media screen and (min-width: 1300px) {
-    .titre_nomPrenom {
-        padding: 0 0 1% 0;
+        font-size: 2.2em;
     }
 }
 
 .intitule {
     font-family: 'Futurist', sans-serif;
-    font-size: 0.7em;
-    padding-top: 2%;
+    font-size: 8px;
+    padding-top: 0;
 }
 
 @media screen and (min-width: 768px) {
     .intitule {
-        font-size: 1em;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .intitule {
-        font-size: 1.2em;
+        font-size: 15px;
     }
 }
 
 @media screen and (min-width: 1300px) {
     .intitule {
-        padding-top: 1%;
+        padding-top: 0;
         font-size: 1em;
     }
 }

@@ -224,7 +224,7 @@ class Experiences_professionnelles extends Component {
                 <VerticalTimelineElement
                   className="vertical-timeline-element--work"
                   date="14 mai 2017 - Aujourd'hui"
-                  iconStyle={{ background: "rgb(19, 31, 17)", color: "#fff" }}
+                  iconStyle={{ background: "rgb(224, 170, 25)", color: "#fff" }}
                 >
                   <div className="badge">
                     <div className="titres">
@@ -313,7 +313,7 @@ class Experiences_professionnelles extends Component {
                 <VerticalTimelineElement
                   className="vertical-timeline-element--work"
                   date="14 mai 2017 - Aujourd'hui"
-                  iconStyle={{ background: "rgb(19, 31, 17)", color: "#fff" }}
+                  iconStyle={{ background: "rgb(124, 86, 1)", color: "#fff" }}
                 >
                   <div className="badge">
                     <div className="titres">
@@ -344,7 +344,7 @@ class Experiences_professionnelles extends Component {
                 <VerticalTimelineElement
                   className="vertical-timeline-element--work"
                   date="14 mai 2017 - Aujourd'hui"
-                  iconStyle={{ background: "rgb(19, 31, 17)", color: "#fff" }}
+                  iconStyle={{ background: "rgb(241, 107, 36)", color: "#fff" }}
                 >
                   <div className="badge">
                     <div className="titres">
@@ -375,7 +375,7 @@ class Experiences_professionnelles extends Component {
                 <VerticalTimelineElement
                   className="vertical-timeline-element--work"
                   date="14 mai 2017 - Aujourd'hui"
-                  iconStyle={{ background: "rgb(19, 31, 17)", color: "#fff" }}
+                  iconStyle={{ background: "rgb(250, 213, 207)", color: "#fff" }}
                 >
                   <div className="badge">
                     <div className="titres">
