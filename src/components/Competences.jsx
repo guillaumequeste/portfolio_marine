@@ -550,11 +550,130 @@ class Competences extends Component {
               </div>
             </div>
             <div className="bloc">
-              <div className="sous-bloc">
+              <div className="sous-blocAutres">
+                <h3 className="titreDomaine">Savoirs et savoir-faire</h3>
+                <ul>
+                  <li className="liSousBlocAutres">
+                    <h6 className="domaineAutres">Gestion de projet</h6>
+                    <span className="spanStar">
+                      <img
+                        src={require("../img/star.png")}
+                        alt="star"
+                        className="star jaune"
+                      ></img>
+                    </span>
+                    <span className="spanStar">
+                      <img
+                        src={require("../img/star.png")}
+                        alt="star"
+                        className="star jaune"
+                      ></img>
+                    </span>
+                    <span className="spanStar">
+                      <img
+                        src={require("../img/star.png")}
+                        alt="star"
+                        className="star jaune"
+                      ></img>
+                    </span>
+                    <span className="spanStar">
+                      <img
+                        src={require("../img/star.png")}
+                        alt="star"
+                        className="star jaune"
+                      ></img>
+                    </span>
+                    <span className="spanStar">
+                      <img
+                        src={require("../img/star.png")}
+                        alt="star"
+                        className="star jaune"
+                      ></img>
+                    </span>
+                  </li>
+                  <li className="liSousBlocAutres">
+                    <h6 className="domaineAutres">Id</h6>
+                    <span className="spanStar">
+                      <img
+                        src={require("../img/star.png")}
+                        alt="star"
+                        className="star jaune"
+                      ></img>
+                    </span>
+                    <span className="spanStar">
+                      <img
+                        src={require("../img/star.png")}
+                        alt="star"
+                        className="star jaune"
+                      ></img>
+                    </span>
+                    <span className="spanStar">
+                      <img
+                        src={require("../img/star.png")}
+                        alt="star"
+                        className="star jaune"
+                      ></img>
+                    </span>
+                    <span className="spanStar">
+                      <img
+                        src={require("../img/star.png")}
+                        alt="star"
+                        className="star jaune"
+                      ></img>
+                    </span>
+                    <span className="spanStar">
+                      <img
+                        src={require("../img/star.png")}
+                        alt="star"
+                        className="star jaune"
+                      ></img>
+                    </span>
+                  </li>
+                  <li className="liSousBlocAutres">
+                    <h6 className="domaineAutres">Ni</h6>
+                    <span className="spanStar">
+                      <img
+                        src={require("../img/star.png")}
+                        alt="star"
+                        className="star jaune"
+                      ></img>
+                    </span>
+                    <span className="spanStar">
+                      <img
+                        src={require("../img/star.png")}
+                        alt="star"
+                        className="star jaune"
+                      ></img>
+                    </span>
+                    <span className="spanStar">
+                      <img
+                        src={require("../img/star.png")}
+                        alt="star"
+                        className="star jaune"
+                      ></img>
+                    </span>
+                    <span className="spanStar">
+                      <img
+                        src={require("../img/star.png")}
+                        alt="star"
+                        className="star jaune"
+                      ></img>
+                    </span>
+                    <span className="spanStar">
+                      <img
+                        src={require("../img/star.png")}
+                        alt="star"
+                        className="star jaune"
+                      ></img>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <div className="sous-blocAutres">
                 <h3 className="titreDomaine">Autres</h3>
                 <ul>
-                  <li className="liSousBloc">
-                    <h6 className="domaine">Ps</h6>
+                  <li className="liSousBlocAutres">
+                    <h6 className="domaineAutres">Ps</h6>
                     <span className="spanStar">
                       <img
                         src={require("../img/star.png")}
@@ -591,8 +710,8 @@ class Competences extends Component {
                       ></img>
                     </span>
                   </li>
-                  <li className="liSousBloc">
-                    <h6 className="domaine">Id</h6>
+                  <li className="liSousBlocAutres">
+                    <h6 className="domaineAutres">Id</h6>
                     <span className="spanStar">
                       <img
                         src={require("../img/star.png")}
@@ -629,8 +748,8 @@ class Competences extends Component {
                       ></img>
                     </span>
                   </li>
-                  <li className="liSousBloc">
-                    <h6 className="domaine">Ni</h6>
+                  <li className="liSousBlocAutres">
+                    <h6 className="domaineAutres">Ni</h6>
                     <span className="spanStar">
                       <img
                         src={require("../img/star.png")}
