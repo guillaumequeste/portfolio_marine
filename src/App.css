@@ -268,6 +268,12 @@
     font-size: 1rem;
 }
 
+@media screen and (max-width: 319px) {
+    .titre_domaine {
+        font-size: 0.8rem;
+    }
+}
+
 
 /* Header */
 
@@ -472,6 +478,12 @@
     }
 }
 
+@media screen and (max-width: 319px) {
+    .vertical-timeline-element-title {
+        font-size: 0.8rem;
+    }
+}
+
 .titres {
     color: black;
 }
@@ -489,6 +501,12 @@
 
 .titreLong2 {
     margin-left: 1%;
+}
+
+@media screen and (max-width: 319px) {
+    .titreLong2 {
+        font-size: 0.8rem;
+    }
 }
 
 .fontWeightBold {
