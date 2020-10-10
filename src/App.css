@@ -45,14 +45,14 @@
     min-height: 81vh;
 }
 
-.container {
+.detailsPresentation_container {
     display: flex;
     flex-direction: column;
     min-height: 61vh;
 }
 
 @media screen and (min-width: 768px) {
-    .container {
+    .contadetailsPresentation_containerner {
         flex-direction: row;
     }
 }
@@ -677,49 +677,85 @@
 
 .detailsEtudes {
     background-color: var(--color-etudes);
-    height: 81vh;
-}
-
-@media screen and (min-width: 768px) {
-    .detailsEtudes {
-        height: 78vh;
-    }
-}
-
-@media screen and (min-width: 1300px) {
-    .detailsEtudes {
-        height: 75vh;
-    }
+    min-height: 81vh;
+    color: white;
 }
 
 .etude {
     display: flex;
-    flex-direction: row;
-    color: white;
-    height: 22vh;
-    padding: 2%;
+    flex-direction: column;
+    min-height: 20vh;
+    border-bottom: solid 1px white;
 }
 
-.imgEtude {
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    float: left;
-}
-
-@media screen and (min-width: 1300px) {
-    .imgEtude {
-        width: 100px;
-        height: 100px;
+@media screen and (min-width: 768px) {
+    .etude {
+        flex-direction: row;
     }
 }
 
-.texteEtude {
-    padding-left: 2%;
+.typeEtude {
+    display: flex;
+    flex-direction: column;
+    min-height: 10vh;
 }
 
-.pEtude {
-    margin: 0;
+@media screen and (min-width: 768px) {
+    .typeEtude {
+        width: 20vw;
+        margin: auto;
+    }
+    .descEtude {
+        width: 80vw;
+    }
+}
+
+.typeEtude_nom {
+    display: flex;
+    width: 100px;
+    height: 50px;
+    border: solid 1px white;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.typeEtude_nom_h5 {
+    margin: auto;
+}
+
+.typeEtude_nom_p {
+    text-align: center;
+}
+
+.descEtude {
+    display: flex;
+    flex-direction: column;
+    min-height: 10vh;
+    padding: 2%;
+}
+
+.descEtude_nom_h5 {
+    text-align: center;
+}
+
+.descEtude_nom_p {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .typeEtude_nom_h5 {
+        font-size: 1.5rem;
+    }
+    .typeEtude_nom_p {
+        font-size: 1.5rem;
+    }
+    .descEtude_nom_h5 {
+        font-size: 1.5rem;
+    }
+    .descEtude_nom_p {
+        font-size: 1.5rem;
+    }
 }
 
 
@@ -727,19 +763,7 @@
 
 .detailsExp_add {
     background-color: var(--color-experiences_additionnelles);
-    height: 81vh;
-}
-
-@media screen and (min-width: 768px) {
-    .detailsExp_add {
-        height: 78vh;
-    }
-}
-
-@media screen and (min-width: 1300px) {
-    .detailsExp_add {
-        height: 75vh;
-    }
+    min-height: 81vh;
 }
 
 

@@ -16,7 +16,7 @@ class Experiences_professionnelles extends Component {
       details2: false,
       details3: false,
       details4: false,
-      details5: false,
+
       details6: false
     };
     this.clicDetails1Plus = this.clicDetails1Plus.bind(this);
@@ -27,8 +27,7 @@ class Experiences_professionnelles extends Component {
     this.clicDetails3Moins = this.clicDetails3Moins.bind(this);
     this.clicDetails4Plus = this.clicDetails4Plus.bind(this);
     this.clicDetails4Moins = this.clicDetails4Moins.bind(this);
-    this.clicDetails5Plus = this.clicDetails5Plus.bind(this);
-    this.clicDetails5Moins = this.clicDetails5Moins.bind(this);
+
     this.clicDetails6Plus = this.clicDetails6Plus.bind(this);
     this.clicDetails6Moins = this.clicDetails6Moins.bind(this);
   }
@@ -78,18 +77,6 @@ class Experiences_professionnelles extends Component {
   clicDetails4Moins() {
     this.setState({
       details4: false
-    });
-  }
-
-  clicDetails5Plus() {
-    this.setState({
-      details5: true
-    });
-  }
-
-  clicDetails5Moins() {
-    this.setState({
-      details5: false
     });
   }
 
@@ -178,24 +165,6 @@ class Experiences_professionnelles extends Component {
       fontSize: "1.5em"
     };
 
-    let divDetails5 = { display: "none", textAlign: "left" };
-    let buttonDetails5Plus = {
-      display: "block",
-      borderRadius: "5px",
-      backgroundColor: "rgb(2, 62, 24)",
-      color: "white",
-      fontWeight: "bold",
-      fontSize: "1.5em"
-    };
-    let buttonDetails5Moins = {
-      display: "none",
-      borderRadius: "5px",
-      backgroundColor: "rgb(2, 62, 24)",
-      color: "white",
-      fontWeight: "bold",
-      fontSize: "1.5em"
-    };
-
     let divDetails6 = { display: "none", textAlign: "left" };
     let buttonDetails6Plus = {
       display: "block",
@@ -234,16 +203,7 @@ class Experiences_professionnelles extends Component {
       buttonDetails4Plus.display = "none";
       buttonDetails4Moins.display = "block";
     }
-    if (this.state.details5 === true) {
-      divDetails5.display = "block";
-      buttonDetails5Plus.display = "none";
-      buttonDetails5Moins.display = "block";
-    }
-    if (this.state.details6 === true) {
-      divDetails6.display = "block";
-      buttonDetails6Plus.display = "none";
-      buttonDetails6Moins.display = "block";
-    }
+
     if (this.state.details6 === true) {
       divDetails6.display = "block";
       buttonDetails6Plus.display = "none";
@@ -266,54 +226,8 @@ class Experiences_professionnelles extends Component {
               <VerticalTimeline className="timeline">
                 <VerticalTimelineElement
                   className="vertical-timeline-element--work"
-                  date="septembre 2010 - septembre 2014"
-                  iconStyle={{ background: "rgb(224, 170, 25)", color: "#fff" }}
-                >
-                  <div className="badge">
-                    <div className="titres">
-                      <div className="titreLong">
-                        <h6 className="vertical-timeline-element-title fontWeightBold">
-                          ? ?
-                        </h6>
-                        <h6 className="titreLong2 fontWeightBold"> ?</h6>
-                      </div>
-                      <p className="lieu">? (?)</p>
-                    </div>
-                    <button
-                      onClick={this.clicDetails5Plus}
-                      style={buttonDetails5Plus}
-                    >
-                      +
-                    </button>
-                    <ul style={divDetails5}>
-                      <li className="whiteSpaceNormal">
-                        <span className="bBlack">*****</span> *******
-                      </li>
-                      <li className="whiteSpaceNormal">
-                        <span className="bBlack">**</span> ******
-                      </li>
-                      <li className="whiteSpaceNormal">
-                        <span className="bBlack">****</span>.
-                      </li>
-                      <li className="whiteSpaceNormal">
-                        <span className="bBlack">**</span> *******{" "}
-                        <span className="bBlack">*******</span>.
-                      </li>
-                      <li className="whiteSpaceNormal">********</li>
-                    </ul>
-                    <button
-                      onClick={this.clicDetails5Moins}
-                      style={buttonDetails5Moins}
-                    >
-                      -
-                    </button>
-                  </div>
-                </VerticalTimelineElement>
-
-                <VerticalTimelineElement
-                  className="vertical-timeline-element--work"
                   date="mars 2014 - novembre 2018"
-                  iconStyle={{ background: "rgb(19, 31, 17)", color: "#fff" }}
+                  iconStyle={{ background: "rgb(224, 170, 25)", color: "#fff" }}
                 >
                   <div className="badge">
                     <div className="titres">
@@ -373,7 +287,10 @@ class Experiences_professionnelles extends Component {
                         <span className="bBlack">flexibilité</span>.
                       </li>
                       <li className="whiteSpaceNormal">
-                        <span className="bBlack">Organisation d'évènements</span> :
+                        <span className="bBlack">
+                          Organisation d'évènements
+                        </span>{" "}
+                        :
                         <ul>
                           <li>
                             Journées portes ouvertes (invitations, location de
@@ -475,7 +392,9 @@ class Experiences_professionnelles extends Component {
                           bureau d'études
                         </h6>
                       </div>
-                      <p className="lieu">Massmould (Bedford, Grande-Bretagne)</p>
+                      <p className="lieu">
+                        Massmould (Bedford, Grande-Bretagne)
+                      </p>
                     </div>
                     <button
                       onClick={this.clicDetails2Plus}
@@ -550,7 +469,8 @@ class Experiences_professionnelles extends Component {
                           Essais sur ligne de production
                         </span>{" "}
                         pour la mise en place d'un nouveau produit (tests
-                        operculage, détection de métaux, passages sur machine...).
+                        operculage, détection de métaux, passages sur
+                        machine...).
                       </li>
                       <li className="whiteSpaceNormal">
                         <span className="bBlack">Management</span> d'une équipe
@@ -592,7 +512,10 @@ class Experiences_professionnelles extends Component {
                     </button>
                     <ul style={divDetails6}>
                       <li className="whiteSpaceNormal">
-                        <span className="bBlack">Manutention</span> : remplissage de différents rayons, <span className="bBlack">organisation du stock</span>, étiquetage en magasin...
+                        <span className="bBlack">Manutention</span> :
+                        remplissage de différents rayons,{" "}
+                        <span className="bBlack">organisation du stock</span>,
+                        étiquetage en magasin...
                       </li>
                       <li className="whiteSpaceNormal">
                         Renseigner les clients.

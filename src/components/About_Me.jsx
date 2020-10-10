@@ -16,7 +16,7 @@ class About_Me extends Component {
         <div className="bodyPage">
           <EnTete />
           <div className="detailsPresentation">
-            <div className="container">
+            <div className="detailsPresentation_container">
               <div className="photoMarine">
                 <img
                   src={require("../img/paris.jpg")}
