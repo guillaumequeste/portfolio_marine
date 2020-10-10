@@ -102,6 +102,27 @@
     }
 }
 
+.buttonCV {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    margin-top: 20px;
+    padding: 18px 50px;
+    border-radius: 3px;
+    transition: all 0.3s ease-in 0s;
+    display: inline-block;
+    margin-bottom: 5%;
+}
+
+.buttonCV:hover {
+    background: white;
+    color: black;
+    text-decoration: none;
+}
+
 .liens {
     display: flex;
     flex-direction: column;

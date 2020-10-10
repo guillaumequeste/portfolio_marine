@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Header from "./Header";
 import EnTete from "./EnTete";
-import file from "../docs/CVGuillaumeQueste.pdf";
+import file from "../docs/CV_Chef_de_projet.pdf";
 import Helmet from "./Helmet";
 
 class About_Me extends Component {
@@ -44,7 +44,19 @@ class About_Me extends Component {
                     Comme le dit si bien Paul Morand "Le plus beau voyage, c'est
                     celui qu'on fait l'un vers l'autre."
                   </p>
-                  <p><b>Alors voyageon ensemble !</b></p>
+                  <p>
+                    <b>Alors voyageon ensemble !</b>
+                  </p>
+                  <a
+                    href={file}
+                    without
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <button label="Resume" className="buttonCV">
+                      Télécharger mon CV
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -60,25 +72,25 @@ class About_Me extends Component {
               <div className="comptes">
                 <div className="detailsComptes">
                   <div>
-                  <img
-                    src={require("../img/facebook.png")}
-                    alt="facebook"
-                    className="facebook"
-                  ></img>
+                    <img
+                      src={require("../img/facebook.png")}
+                      alt="facebook"
+                      className="facebook"
+                    ></img>
                   </div>
                   <div>
-                  <img
-                    src={require("../img/instagram.png")}
-                    alt="facebook"
-                    className="instagram"
-                  ></img>
+                    <img
+                      src={require("../img/instagram.png")}
+                      alt="facebook"
+                      className="instagram"
+                    ></img>
                   </div>
                   <div>
-                  <img
-                    src={require("../img/linkedin.png")}
-                    alt="facebook"
-                    className="linkedin"
-                  ></img>
+                    <img
+                      src={require("../img/linkedin.png")}
+                      alt="facebook"
+                      className="linkedin"
+                    ></img>
                   </div>
                 </div>
               </div>
