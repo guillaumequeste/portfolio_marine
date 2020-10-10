@@ -223,29 +223,44 @@ class Experiences_professionnelles extends Component {
               <VerticalTimeline className="timeline">
                 <VerticalTimelineElement
                   className="vertical-timeline-element--work"
-                  date="14 mai 2017 - Aujourd'hui"
+                  date="septembre 2010 - septembre 2014"
                   iconStyle={{ background: "rgb(224, 170, 25)", color: "#fff" }}
                 >
                   <div className="badge">
                     <div className="titres">
                       <div className="titreLong">
-                        <h6 className="vertical-timeline-element-title">
-                          Responsable
+                        <h6 className="vertical-timeline-element-title fontWeightBold">
+                          ? ?
                         </h6>
-                        <h6 className="titreLong2"> développement packaging</h6>
+                        <h6 className="titreLong2 fontWeightBold"> ?</h6>
                       </div>
-                      <p>Smurfit Kappa (63)</p>
+                      <p className="lieu">? (?)</p>
                     </div>
                     <button
-                      onClick={this.clicDetails5Plus}
-                      style={buttonDetails5Plus}
+                      onClick={this.clicDetails4Plus}
+                      style={buttonDetails4Plus}
                     >
                       +
                     </button>
-                    <p style={divDetails5}>hello</p>
+                    <ul style={divDetails4}>
+                      <li className="whiteSpaceNormal">
+                        <span className="bBlack">*****</span> *******
+                      </li>
+                      <li className="whiteSpaceNormal">
+                        <span className="bBlack">**</span> ******
+                      </li>
+                      <li className="whiteSpaceNormal">
+                        <span className="bBlack">****</span>.
+                      </li>
+                      <li className="whiteSpaceNormal">
+                        <span className="bBlack">**</span> *******{" "}
+                        <span className="bBlack">*******</span>.
+                      </li>
+                      <li className="whiteSpaceNormal">********</li>
+                    </ul>
                     <button
-                      onClick={this.clicDetails5Moins}
-                      style={buttonDetails5Moins}
+                      onClick={this.clicDetails4Moins}
+                      style={buttonDetails4Moins}
                     >
                       -
                     </button>
@@ -296,9 +311,46 @@ class Experiences_professionnelles extends Component {
                         , à l'écoute du client et de ses envies.
                       </li>
                       <li className="whiteSpaceNormal">
-                      <span className="bBlack">
-                          Management
-                        </span> des apprentis et du concepteur du bureau d'études
+                        <span className="bBlack">Management</span> des apprentis
+                        et du concepteur du bureau d'études.
+                      </li>
+                      <li className="whiteSpaceNormal">
+                        <span className="bBlack">Orientation clients</span> sur
+                        le choix des différentes propositions de concepts.
+                        Présentation PowerPoint avec prototypes devant le
+                        client.
+                      </li>
+                      <li className="whiteSpaceNormal">
+                        <span className="bBlack">Création de graphismes</span> à
+                        apposer sur les packagings.
+                      </li>
+                      <li className="whiteSpaceNormal">
+                        Les deadlines, les changements de production entraînent
+                        une <span className="bBlack">adaptabilité</span> et une{" "}
+                        <span className="bBlack">flexibilité</span>.
+                      </li>
+                      <li className="whiteSpaceNormal">
+                        <span className="bBlack">* d'évènements</span> :
+                        <ul>
+                          <li>
+                            Journées portes ouvertes (invitations, location de
+                            matériel, accueil le jour J, animations
+                            d'ateliers...)
+                          </li>
+                          <li>
+                            40 ans de l'entreprise (affiches, invitations, frise
+                            chronologique géante, cadeaux clients...)
+                          </li>
+                          <li>
+                            Remise de médailles (préparation de la salle,
+                            création de décor, location de matériel...)
+                          </li>
+                          <li>
+                            Fêtes de Noël (réservation du restaurant, affiches,
+                            cartons d'invitation, lancement de concours, * de la
+                            soirée...)
+                          </li>
+                        </ul>
                       </li>
                     </ul>
                     <button
@@ -312,29 +364,52 @@ class Experiences_professionnelles extends Component {
 
                 <VerticalTimelineElement
                   className="vertical-timeline-element--work"
-                  date="14 mai 2017 - Aujourd'hui"
+                  date="septembre 2011 - mars 2014"
                   iconStyle={{ background: "rgb(124, 86, 1)", color: "#fff" }}
                 >
                   <div className="badge">
                     <div className="titres">
                       <div className="titreLong">
-                        <h6 className="vertical-timeline-element-title">
-                          Responsable
+                        <h6 className="vertical-timeline-element-title fontWeightBold">
+                          Apprentie technicienne
                         </h6>
-                        <h6 className="titreLong2"> développement packaging</h6>
+                        <h6 className="titreLong2 fontWeightBold">
+                          {" "}
+                          bureau d'études
+                        </h6>
                       </div>
-                      <p>Smurfit Kappa (63)</p>
+                      <p className="lieu">?</p>
                     </div>
                     <button
-                      onClick={this.clicDetails3Plus}
-                      style={buttonDetails3Plus}
+                      onClick={this.clicDetails4Plus}
+                      style={buttonDetails4Plus}
                     >
                       +
                     </button>
-                    <p style={divDetails3}>hello</p>
+                    <ul style={divDetails4}>
+                      <li className="whiteSpaceNormal">
+                        <span className="bBlack">Pilotage de projets</span> pour
+                        de nombreux clients (Haribo, McCormick, Nestlé
+                        Watters...).
+                      </li>
+                      <li className="whiteSpaceNormal">
+                        <span className="bBlack">
+                          Dessins assistés par ordinateur
+                        </span>{" "}
+                        (Artios Cad).
+                      </li>
+                      <li className="whiteSpaceNormal">
+                        <span className="bBlack">Prototypages</span>
+                        sur tables de découpe.
+                      </li>
+                      <li className="whiteSpaceNormal">
+                        <span className="bBlack">Création</span> de nouveaux
+                        emballages.
+                      </li>
+                    </ul>
                     <button
-                      onClick={this.clicDetails3Moins}
-                      style={buttonDetails3Moins}
+                      onClick={this.clicDetails4Moins}
+                      style={buttonDetails4Moins}
                     >
                       -
                     </button>
@@ -343,29 +418,54 @@ class Experiences_professionnelles extends Component {
 
                 <VerticalTimelineElement
                   className="vertical-timeline-element--work"
-                  date="14 mai 2017 - Aujourd'hui"
+                  date="septembre 2010 - septembre 2014"
                   iconStyle={{ background: "rgb(241, 107, 36)", color: "#fff" }}
                 >
                   <div className="badge">
                     <div className="titres">
                       <div className="titreLong">
-                        <h6 className="vertical-timeline-element-title">
-                          Responsable
+                        <h6 className="vertical-timeline-element-title fontWeightBold">
+                          Apprentie technicienne
                         </h6>
-                        <h6 className="titreLong2"> développement packaging</h6>
+                        <h6 className="titreLong2 fontWeightBold">
+                          {" "}
+                          bureau d'études
+                        </h6>
                       </div>
-                      <p>Smurfit Kappa (63)</p>
+                      <p className="lieu">? (Bedford, Grande-Bretagne)</p>
                     </div>
                     <button
-                      onClick={this.clicDetails2Plus}
-                      style={buttonDetails2Plus}
+                      onClick={this.clicDetails4Plus}
+                      style={buttonDetails4Plus}
                     >
                       +
                     </button>
-                    <p style={divDetails2}>hello</p>
+                    <ul style={divDetails4}>
+                      <li className="whiteSpaceNormal">
+                        <span className="bBlack">
+                          Rédaction de process machines
+                        </span>{" "}
+                        pour des machines d'injection plastique.
+                      </li>
+                      <li className="whiteSpaceNormal">
+                        <span className="bBlack">Contrôles qualité</span> de
+                        pièces injectées.
+                      </li>
+                      <li className="whiteSpaceNormal">
+                        <span className="bBlack">Dessin sur logiciel 3D</span>.
+                      </li>
+                      <li className="whiteSpaceNormal">
+                        <span className="bBlack">Tests</span> de nouveaux
+                        produits{" "}
+                        <span className="bBlack">sur ligne de production</span>.
+                      </li>
+                      <li className="whiteSpaceNormal">
+                        Pilotage de la machine.
+                      </li>
+                    </ul>
                     <button
-                      onClick={this.clicDetails2Moins}
-                      style={buttonDetails2Moins}
+                      onClick={this.clicDetails4Moins}
+                      style={buttonDetails4Moins}
                     >
                       -
                     </button>
@@ -374,29 +474,50 @@ class Experiences_professionnelles extends Component {
 
                 <VerticalTimelineElement
                   className="vertical-timeline-element--work"
-                  date="14 mai 2017 - Aujourd'hui"
-                  iconStyle={{ background: "rgb(250, 213, 207)", color: "#fff" }}
+                  date="septembre 2009 - septembre 2010"
+                  iconStyle={{
+                    background: "rgb(250, 213, 207)",
+                    color: "#fff"
+                  }}
                 >
                   <div className="badge">
                     <div className="titres">
                       <div className="titreLong">
-                        <h6 className="vertical-timeline-element-title">
-                          Responsable
+                        <h6 className="vertical-timeline-element-title fontWeightBold">
+                          Apprentie qualité -
                         </h6>
-                        <h6 className="titreLong2"> développement packaging</h6>
+                        <h6 className="titreLong2 fontWeightBold"> process</h6>
                       </div>
-                      <p>Smurfit Kappa (63)</p>
+                      <p className="lieu">Nestlé (76)</p>
                     </div>
                     <button
-                      onClick={this.clicDetails1Plus}
-                      style={buttonDetails1Plus}
+                      onClick={this.clicDetails4Plus}
+                      style={buttonDetails4Plus}
                     >
                       +
                     </button>
-                    <p style={divDetails1}>hello</p>
+                    <ul style={divDetails4}>
+                      <li className="whiteSpaceNormal">
+                        <span className="bBlack">Contrôle qualité</span> des
+                        produits de production (capsules, pots en verre,
+                        operculage...).
+                      </li>
+                      <li className="whiteSpaceNormal">
+                        <span className="bBlack">
+                          Essais sur ligne de production
+                        </span>{" "}
+                        pour la mise en place d'un nouveau produit (tests
+                        operculage, détection de *, passages sur machine...).
+                      </li>
+                      <li className="whiteSpaceNormal">
+                        <span className="bBlack">Management</span> d'une équipe
+                        de CAT mise à disposition pour les tests du nouveau
+                        produit.
+                      </li>
+                    </ul>
                     <button
-                      onClick={this.clicDetails1Moins}
-                      style={buttonDetails1Moins}
+                      onClick={this.clicDetails4Moins}
+                      style={buttonDetails4Moins}
                     >
                       -
                     </button>
