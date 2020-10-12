@@ -448,18 +448,15 @@
     min-height: 81vh;
 }
 
-.col-md-4 {
+.divCarte {
     min-height: 40vh;
+    margin: 2% 0;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .col-md-4 {
+    .divCarte {
         min-height: 30vh;
     }
-}
-
-.divCarte {
-    margin: 2% 0;
 }
 
 .carte {
@@ -473,7 +470,6 @@
     height: 100%;
     width: 86%;
     position: absolute;
-    z-index: 2;
     display: flex;
 }
 
@@ -506,6 +502,33 @@
 
 .sixieme {
     display: none;
+}
+
+.divImg {
+    display: flex;
+    margin-top: 20%;
+    padding: 2%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .divImg {
+        margin-top: 8%;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .divImg {
+        margin-top: 5%;
+    }
+}
+
+.aImgHorizontale {
+    margin: auto;
+}
+
+.imgHorizontale {
+    width: 200px;
+    height: 150px;
 }
 
 

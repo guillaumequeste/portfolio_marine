@@ -23,8 +23,12 @@ class Book extends Component {
     this.clicDetailsAfficheMoins = this.clicDetailsAfficheMoins.bind(this);
     this.clicDetailsFairePartPlus = this.clicDetailsFairePartPlus.bind(this);
     this.clicDetailsFairePartMoins = this.clicDetailsFairePartMoins.bind(this);
-    this.clicDetailsDossierClientsPlus = this.clicDetailsDossierClientsPlus.bind(this);
-    this.clicDetailsDossierClientsMoins = this.clicDetailsDossierClientsMoins.bind(this);
+    this.clicDetailsDossierClientsPlus = this.clicDetailsDossierClientsPlus.bind(
+      this
+    );
+    this.clicDetailsDossierClientsMoins = this.clicDetailsDossierClientsMoins.bind(
+      this
+    );
     this.clicDetailsAutrePlus = this.clicDetailsAutrePlus.bind(this);
     this.clicDetailsAutreMoins = this.clicDetailsAutreMoins.bind(this);
   }
@@ -89,10 +93,8 @@ class Book extends Component {
     });
   }
 
-  
-
   render() {
-    let divDetailsCarteDeVisite = { display: "none", textAlign: "left" };
+    let detailsBook = { minHeight: "81vh" };
     let detailsCarteDeVisite = { display: "none" };
     let buttonDetailsCarteDeVisitePlus = {
       display: "block",
@@ -111,7 +113,6 @@ class Book extends Component {
       fontSize: "1.5em"
     };
     let carteDeVisite = { display: "block" };
-
 
     let divDetailsFairePart = { display: "none", textAlign: "left" };
     let detailsFairePart = { display: "none" };
@@ -133,7 +134,6 @@ class Book extends Component {
     };
     let fairePart = { display: "block" };
 
-
     let divDetailsAffiche = { display: "none", textAlign: "left" };
     let detailsAffiche = { display: "none" };
     let buttonDetailsAffichePlus = {
@@ -153,7 +153,6 @@ class Book extends Component {
       fontSize: "1.5em"
     };
     let affiche = { display: "block" };
-
 
     let divDetailsDossierClients = { display: "none", textAlign: "left" };
     let detailsDossierClients = { display: "none" };
@@ -175,7 +174,6 @@ class Book extends Component {
     };
     let dossierClients = { display: "block" };
 
-
     let divDetailsAutre = { display: "none", textAlign: "left" };
     let detailsAutre = { display: "none" };
     let buttonDetailsAutrePlus = {
@@ -196,9 +194,7 @@ class Book extends Component {
     };
     let autre = { display: "block" };
 
-
     if (this.state.detailsCarteDeVisite === true) {
-      divDetailsCarteDeVisite.display = "block";
       detailsCarteDeVisite.display = "block";
       buttonDetailsCarteDeVisitePlus.display = "none";
       buttonDetailsCarteDeVisiteMoins.display = "block";
@@ -206,6 +202,8 @@ class Book extends Component {
       affiche.display = "none";
       dossierClients.display = "none";
       autre.display = "none";
+      carteDeVisite.minWidth = "100%";
+      detailsBook.height = "110vh";
     }
     if (this.state.detailsFairePart === true) {
       divDetailsFairePart.display = "block";
@@ -247,7 +245,6 @@ class Book extends Component {
       affiche.display = "none";
       dossierClients.display = "none";
     }
-    
 
     return (
       <div>
@@ -258,7 +255,7 @@ class Book extends Component {
         <Header />
         <div className="bodyPage">
           <EnTete />
-          <div className="detailsBook">
+          <div className="detailsBook" style={detailsBook}>
             <div class="container">
               <div class="row">
                 {/* card carte de visite */}
@@ -276,30 +273,48 @@ class Book extends Component {
                           >
                             +
                           </button>
+                          <button
+                            onClick={this.clicDetailsCarteDeVisiteMoins}
+                            style={buttonDetailsCarteDeVisiteMoins}
+                          >
+                            -
+                          </button>
                         </div>
                       </div>
                     </div>
                     <div className="up">carte de visite</div>
                     <div className="down">
-                      <p style={divDetailsCarteDeVisite}>
-                        details carte de visite
-                      </p>
                       <div style={detailsCarteDeVisite}>
-                        <ul>
-                          <li>eerv</li>
-                          <li>eerv</li>
-                          <li>eerv</li>
-                          <li>eerv</li>
-                          <li>eerv</li>
-                          <li>eerv</li>
-                        </ul>
+                        <div className="row">
+                          <div className="col-12 col-sm-6 divImg">
+                            <a
+                              href={require("../img/carte_de_visite_guillaume.jpg")}
+                              without
+                              rel="noopener noreferrer"
+                              target="_blank"
+                              className="aImgHorizontale"
+                            >
+                              <img
+                                src={require("../img/carte_de_visite_guillaume.jpg")}
+                                alt="carte_de_visite_guillaume"
+                                className="imgHorizontale"
+                              ></img>
+                            </a>
+                          </div>
+                          <div className="col-12 col-sm-6 divImg">
+                            <a
+                              href={require("../img/logo.jpg")}
+                              without rel="noopener noreferrer" target="_blank"
+                              className="aImgHorizontale" >
+                              <img
+                                src={require("../img/logo.jpg")}
+                                alt="logo"
+                                className="imgHorizontale"
+                              ></img>
+                            </a>
+                          </div>
+                        </div>
                       </div>
-                      <button
-                        onClick={this.clicDetailsCarteDeVisiteMoins}
-                        style={buttonDetailsCarteDeVisiteMoins}
-                      >
-                        -
-                      </button>
                     </div>
                   </div>
                 </div>
@@ -384,7 +399,10 @@ class Book extends Component {
                 </div>
 
                 {/* card dossiers cliants */}
-                <div class="col-md-4 col-sm-6 col-12 divCarte" style={dossierClients}>
+                <div
+                  class="col-md-4 col-sm-6 col-12 divCarte"
+                  style={dossierClients}
+                >
                   <div className="carte">
                     <div className="couvCarte">
                       <div className="rond">
@@ -400,7 +418,9 @@ class Book extends Component {
                     </div>
                     <div className="up">dossier clients</div>
                     <div className="down">
-                      <p style={divDetailsDossierClients}>détails dossier clients</p>
+                      <p style={divDetailsDossierClients}>
+                        détails dossier clients
+                      </p>
                       <div style={detailsDossierClients}>
                         <ul>
                           <li>eerv</li>
