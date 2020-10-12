@@ -19,7 +19,7 @@ class About_Me extends Component {
             <div className="detailsPresentation_container">
               <div className="photoMarine">
                 <img
-                  src={require("../img/paris.jpg")}
+                  src={require("../img/moi.jpg")}
                   alt="photoMarine"
                   className="imgPhotoMarine"
                 ></img>
@@ -49,7 +49,7 @@ class About_Me extends Component {
                   </p>
                   <a
                     href={file}
-                    without
+                    without="true"
                     rel="noopener noreferrer"
                     target="_blank"
                   >

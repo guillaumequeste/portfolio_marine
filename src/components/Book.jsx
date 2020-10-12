@@ -95,6 +95,8 @@ class Book extends Component {
 
   render() {
     let detailsBook = { minHeight: "81vh" };
+    let titreCard = { paddingTop: "25%", textAlign: "center", fontWeight: "bold" };
+
     let detailsCarteDeVisite = { display: "none" };
     let buttonDetailsCarteDeVisitePlus = {
       display: "block",
@@ -114,7 +116,6 @@ class Book extends Component {
     };
     let carteDeVisite = { display: "block" };
 
-    let divDetailsFairePart = { display: "none", textAlign: "left" };
     let detailsFairePart = { display: "none" };
     let buttonDetailsFairePartPlus = {
       display: "block",
@@ -134,7 +135,6 @@ class Book extends Component {
     };
     let fairePart = { display: "block" };
 
-    let divDetailsAffiche = { display: "none", textAlign: "left" };
     let detailsAffiche = { display: "none" };
     let buttonDetailsAffichePlus = {
       display: "block",
@@ -154,7 +154,6 @@ class Book extends Component {
     };
     let affiche = { display: "block" };
 
-    let divDetailsDossierClients = { display: "none", textAlign: "left" };
     let detailsDossierClients = { display: "none" };
     let buttonDetailsDossierClientsPlus = {
       display: "block",
@@ -174,7 +173,6 @@ class Book extends Component {
     };
     let dossierClients = { display: "block" };
 
-    let divDetailsAutre = { display: "none", textAlign: "left" };
     let detailsAutre = { display: "none" };
     let buttonDetailsAutrePlus = {
       display: "block",
@@ -196,54 +194,68 @@ class Book extends Component {
 
     if (this.state.detailsCarteDeVisite === true) {
       detailsCarteDeVisite.display = "block";
+      detailsCarteDeVisite.boxShadow = "10px 5px 5px black";
       buttonDetailsCarteDeVisitePlus.display = "none";
       buttonDetailsCarteDeVisiteMoins.display = "block";
+      titreCard.paddingTop = "70px";
       fairePart.display = "none";
       affiche.display = "none";
       dossierClients.display = "none";
       autre.display = "none";
       carteDeVisite.minWidth = "100%";
-      detailsBook.height = "110vh";
+      detailsBook.height = "125vh";
     }
     if (this.state.detailsFairePart === true) {
-      divDetailsFairePart.display = "block";
       detailsFairePart.display = "block";
+      detailsFairePart.boxShadow = "10px 5px 5px black";
       buttonDetailsFairePartPlus.display = "none";
       buttonDetailsFairePartMoins.display = "block";
+      titreCard.paddingTop = "70px";
       carteDeVisite.display = "none";
       affiche.display = "none";
       dossierClients.display = "none";
       autre.display = "none";
+      fairePart.minWidth = "100%";
+      detailsBook.height = "360vh";
     }
     if (this.state.detailsAffiche === true) {
-      divDetailsAffiche.display = "block";
       detailsAffiche.display = "block";
+      detailsAffiche.boxShadow = "10px 5px 5px black";
       buttonDetailsAffichePlus.display = "none";
       buttonDetailsAfficheMoins.display = "block";
+      titreCard.paddingTop = "70px";
       carteDeVisite.display = "none";
       fairePart.display = "none";
       dossierClients.display = "none";
       autre.display = "none";
+      affiche.minWidth = "100%";
+      detailsBook.height = "190vh";
     }
     if (this.state.detailsDossierClients === true) {
-      divDetailsDossierClients.display = "block";
       detailsDossierClients.display = "block";
+      detailsDossierClients.boxShadow = "10px 5px 5px black";
       buttonDetailsDossierClientsPlus.display = "none";
       buttonDetailsDossierClientsMoins.display = "block";
+      titreCard.paddingTop = "70px";
       carteDeVisite.display = "none";
       fairePart.display = "none";
       affiche.display = "none";
       autre.display = "none";
+      dossierClients.minWidth = "100%";
+      detailsBook.height = "540vh";
     }
     if (this.state.detailsAutre === true) {
-      divDetailsAutre.display = "block";
       detailsAutre.display = "block";
+      detailsAutre.boxShadow = "10px 5px 5px black";
       buttonDetailsAutrePlus.display = "none";
       buttonDetailsAutreMoins.display = "block";
+      titreCard.paddingTop = "70px";
       carteDeVisite.display = "none";
       fairePart.display = "none";
       affiche.display = "none";
       dossierClients.display = "none";
+      autre.minWidth = "100%";
+      detailsBook.height = "95vh";
     }
 
     return (
@@ -256,11 +268,11 @@ class Book extends Component {
         <div className="bodyPage">
           <EnTete />
           <div className="detailsBook" style={detailsBook}>
-            <div class="container">
-              <div class="row">
+            <div className="container">
+              <div className="row">
                 {/* card carte de visite */}
                 <div
-                  class="col-md-4 col-sm-6 col-12 divCarte"
+                  className="col-md-4 col-sm-6 col-12 divCarte"
                   style={carteDeVisite}
                 >
                   <div className="carte">
@@ -282,17 +294,18 @@ class Book extends Component {
                         </div>
                       </div>
                     </div>
-                    <div className="up">carte de visite</div>
+                    <div className="upCarteDeVisite"></div>
                     <div className="down">
+                      <h6 style={titreCard}>Cartes de visite</h6>
                       <div style={detailsCarteDeVisite}>
                         <div className="row">
                           <div className="col-12 col-sm-6 divImg">
                             <a
                               href={require("../img/carte_de_visite_guillaume.jpg")}
-                              without
+                              without="true"
                               rel="noopener noreferrer"
                               target="_blank"
-                              className="aImgHorizontale"
+                              className="aImg"
                             >
                               <img
                                 src={require("../img/carte_de_visite_guillaume.jpg")}
@@ -304,8 +317,11 @@ class Book extends Component {
                           <div className="col-12 col-sm-6 divImg">
                             <a
                               href={require("../img/logo.jpg")}
-                              without rel="noopener noreferrer" target="_blank"
-                              className="aImgHorizontale" >
+                              without="true"
+                              rel="noopener noreferrer"
+                              target="_blank"
+                              className="aImg"
+                            >
                               <img
                                 src={require("../img/logo.jpg")}
                                 alt="logo"
@@ -321,7 +337,7 @@ class Book extends Component {
 
                 {/* card faire-part */}
                 <div
-                  class="col-md-4 col-sm-6 col-12 divCarte"
+                  className="col-md-4 col-sm-6 col-12 divCarte"
                   style={fairePart}
                 >
                   <div className="carte">
@@ -334,34 +350,103 @@ class Book extends Component {
                           >
                             +
                           </button>
+                          <button
+                            onClick={this.clicDetailsFairePartMoins}
+                            style={buttonDetailsFairePartMoins}
+                          >
+                            -
+                          </button>
                         </div>
                       </div>
                     </div>
-                    <div className="up">faire part</div>
+                    <div className="upFairePart"></div>
                     <div className="down">
-                      <p style={divDetailsFairePart}>details faire-part</p>
+                    <h6 style={titreCard}>Faireparts</h6>
                       <div style={detailsFairePart}>
-                        <ul>
-                          <li>eerv</li>
-                          <li>eerv</li>
-                          <li>eerv</li>
-                          <li>eerv</li>
-                          <li>eerv</li>
-                          <li>eerv</li>
-                        </ul>
+                        <div className="row">
+                          <div className="col-12 col-sm-4 divImg">
+                            <a
+                              href={require("../img/faire_part_bon-1.jpg")}
+                              without="true"
+                              rel="noopener noreferrer"
+                              target="_blank"
+                              className="aImg"
+                            >
+                              <img
+                                src={require("../img/faire_part_bon-1.jpg")}
+                                alt="carte_de_visite_guillaume"
+                                className="imgHorizontale"
+                              ></img>
+                            </a>
+                          </div>
+                          <div className="col-12 col-sm-4 divImg">
+                            <a
+                              href={require("../img/faire_part_bon-2.jpg")}
+                              without="true"
+                              rel="noopener noreferrer"
+                              target="_blank"
+                              className="aImg"
+                            >
+                              <img
+                                src={require("../img/faire_part_bon-2.jpg")}
+                                alt="logo"
+                                className="imgHorizontale"
+                              ></img>
+                            </a>
+                          </div>
+                          <div className="col-12 col-sm-4 divImg">
+                            <a
+                              href={require("../img/faire_part_bon-3.jpg")}
+                              without="true"
+                              rel="noopener noreferrer"
+                              target="_blank"
+                              className="aImg"
+                            >
+                              <img
+                                src={require("../img/faire_part_bon-3.jpg")}
+                                alt="logo"
+                                className="imgHorizontale"
+                              ></img>
+                            </a>
+                          </div>
+                          <div className="col-12 col-sm-4 divImg">
+                            <a
+                              href={require("../img/faire_part_bon-4.jpg")}
+                              without="true"
+                              rel="noopener noreferrer"
+                              target="_blank"
+                              className="aImg"
+                            >
+                              <img
+                                src={require("../img/faire_part_bon-4.jpg")}
+                                alt="logo"
+                                className="imgVerticale"
+                              ></img>
+                            </a>
+                          </div>
+                          <div className="col-12 col-sm-4 divImg">
+                            <a
+                              href={require("../img/remerciements.jpg")}
+                              without="true"
+                              rel="noopener noreferrer"
+                              target="_blank"
+                              className="aImg"
+                            >
+                              <img
+                                src={require("../img/remerciements.jpg")}
+                                alt="logo"
+                                className="imgVerticale"
+                              ></img>
+                            </a>
+                          </div>
+                        </div>
                       </div>
-                      <button
-                        onClick={this.clicDetailsFairePartMoins}
-                        style={buttonDetailsFairePartMoins}
-                      >
-                        -
-                      </button>
                     </div>
                   </div>
                 </div>
 
                 {/* card affiche */}
-                <div class="col-md-4 col-sm-6 col-12 divCarte" style={affiche}>
+                <div className="col-md-4 col-sm-6 col-12 divCarte" style={affiche}>
                   <div className="carte">
                     <div className="couvCarte">
                       <div className="rond">
@@ -372,35 +457,74 @@ class Book extends Component {
                           >
                             +
                           </button>
+                          <button
+                            onClick={this.clicDetailsAfficheMoins}
+                            style={buttonDetailsAfficheMoins}
+                          >
+                            -
+                          </button>
                         </div>
                       </div>
                     </div>
-                    <div className="up">affiche</div>
+                    <div className="upAffiche"></div>
                     <div className="down">
-                      <p style={divDetailsAffiche}>détails affiche</p>
+                    <h6 style={titreCard}>Affiches</h6>
                       <div style={detailsAffiche}>
-                        <ul>
-                          <li>eerv</li>
-                          <li>eerv</li>
-                          <li>eerv</li>
-                          <li>eerv</li>
-                          <li>eerv</li>
-                          <li>eerv</li>
-                        </ul>
+                        <div className="row">
+                          <div className="col-12 col-sm-4 divImg">
+                            <a
+                              href={require("../img/affiche_dore.jpg")}
+                              without="true"
+                              rel="noopener noreferrer"
+                              target="_blank"
+                              className="aImg"
+                            >
+                              <img
+                                src={require("../img/affiche_dore.jpg")}
+                                alt="carte_de_visite_guillaume"
+                                className="imgVerticale"
+                              ></img>
+                            </a>
+                          </div>
+                          <div className="col-12 col-sm-4 divImg">
+                            <a
+                              href={require("../img/affiche_jazz.jpg")}
+                              without="true"
+                              rel="noopener noreferrer"
+                              target="_blank"
+                              className="aImg"
+                            >
+                              <img
+                                src={require("../img/affiche_jazz.jpg")}
+                                alt="logo"
+                                className="imgVerticale"
+                              ></img>
+                            </a>
+                          </div>
+                          <div className="col-12 col-sm-4 divImg">
+                            <a
+                              href={require("../img/affiche_soiree_chic_choc.jpg")}
+                              without="true"
+                              rel="noopener noreferrer"
+                              target="_blank"
+                              className="aImg"
+                            >
+                              <img
+                                src={require("../img/affiche_soiree_chic_choc.jpg")}
+                                alt="logo"
+                                className="imgVerticale"
+                              ></img>
+                            </a>
+                          </div>
+                        </div>
                       </div>
-                      <button
-                        onClick={this.clicDetailsAfficheMoins}
-                        style={buttonDetailsAfficheMoins}
-                      >
-                        -
-                      </button>
                     </div>
                   </div>
                 </div>
 
-                {/* card dossiers cliants */}
+                {/* card dossiers clients */}
                 <div
-                  class="col-md-4 col-sm-6 col-12 divCarte"
+                  className="col-md-4 col-sm-6 col-12 divCarte"
                   style={dossierClients}
                 >
                   <div className="carte">
@@ -413,36 +537,164 @@ class Book extends Component {
                           >
                             +
                           </button>
+                          <button
+                            onClick={this.clicDetailsDossierClientsMoins}
+                            style={buttonDetailsDossierClientsMoins}
+                          >
+                            -
+                          </button>
                         </div>
                       </div>
                     </div>
-                    <div className="up">dossier clients</div>
+                    <div className="upDossierClients"></div>
                     <div className="down">
-                      <p style={divDetailsDossierClients}>
-                        détails dossier clients
-                      </p>
+                    <h6 style={titreCard}>Dossiers clients</h6>
                       <div style={detailsDossierClients}>
-                        <ul>
-                          <li>eerv</li>
-                          <li>eerv</li>
-                          <li>eerv</li>
-                          <li>eerv</li>
-                          <li>eerv</li>
-                          <li>eerv</li>
-                        </ul>
+                        <div className="row">
+                          <div className="col-12 col-sm-4 divImg">
+                            <a
+                              href={require("../img/dossier_client_final_bon-1.jpg")}
+                              without="true"
+                              rel="noopener noreferrer"
+                              target="_blank"
+                              className="aImg"
+                            >
+                              <img
+                                src={require("../img/dossier_client_final_bon-1.jpg")}
+                                alt="carte_de_visite_guillaume"
+                                className="imgHorizontale"
+                              ></img>
+                            </a>
+                          </div>
+                          <div className="col-12 col-sm-4 divImg">
+                            <a
+                              href={require("../img/dossier_client_final_bon-4.jpg")}
+                              without="true"
+                              rel="noopener noreferrer"
+                              target="_blank"
+                              className="aImg"
+                            >
+                              <img
+                                src={require("../img/dossier_client_final_bon-4.jpg")}
+                                alt="logo"
+                                className="imgHorizontale"
+                              ></img>
+                            </a>
+                          </div>
+                          <div className="col-12 col-sm-4 divImg">
+                            <a
+                              href={require("../img/dossier_client_final_bon-13.jpg")}
+                              without="true"
+                              rel="noopener noreferrer"
+                              target="_blank"
+                              className="aImg"
+                            >
+                              <img
+                                src={require("../img/dossier_client_final_bon-13.jpg")}
+                                alt="logo"
+                                className="imgHorizontale"
+                              ></img>
+                            </a>
+                          </div>
+
+                          <div className="col-12 col-sm-4 divImg">
+                            <a
+                              href={require("../img/dossier_client_final_bon-14.jpg")}
+                              without="true"
+                              rel="noopener noreferrer"
+                              target="_blank"
+                              className="aImg"
+                            >
+                              <img
+                                src={require("../img/dossier_client_final_bon-14.jpg")}
+                                alt="logo"
+                                className="imgHorizontale"
+                              ></img>
+                            </a>
+                          </div>
+                          <div className="col-12 col-sm-4 divImg">
+                            <a
+                              href={require("../img/dossier_client_final_bon-15.jpg")}
+                              without="true"
+                              rel="noopener noreferrer"
+                              target="_blank"
+                              className="aImg"
+                            >
+                              <img
+                                src={require("../img/dossier_client_final_bon-15.jpg")}
+                                alt="logo"
+                                className="imgHorizontale"
+                              ></img>
+                            </a>
+                          </div>
+                          <div className="col-12 col-sm-4 divImg">
+                            <a
+                              href={require("../img/dossier_client_final_bon-44.jpg")}
+                              without="true"
+                              rel="noopener noreferrer"
+                              target="_blank"
+                              className="aImg"
+                            >
+                              <img
+                                src={require("../img/dossier_client_final_bon-44.jpg")}
+                                alt="logo"
+                                className="imgHorizontale"
+                              ></img>
+                            </a>
+                          </div>
+                          <div className="col-12 col-sm-4 divImg">
+                            <a
+                              href={require("../img/dossier_client_final_bon-45.jpg")}
+                              without="true"
+                              rel="noopener noreferrer"
+                              target="_blank"
+                              className="aImg"
+                            >
+                              <img
+                                src={require("../img/dossier_client_final_bon-45.jpg")}
+                                alt="logo"
+                                className="imgHorizontale"
+                              ></img>
+                            </a>
+                          </div>
+                          <div className="col-12 col-sm-4 divImg">
+                            <a
+                              href={require("../img/dossier_client_final_bon-46.jpg")}
+                              without="true"
+                              rel="noopener noreferrer"
+                              target="_blank"
+                              className="aImg"
+                            >
+                              <img
+                                src={require("../img/dossier_client_final_bon-46.jpg")}
+                                alt="logo"
+                                className="imgHorizontale"
+                              ></img>
+                            </a>
+                          </div>
+                          <div className="col-12 col-sm-4 divImg">
+                            <a
+                              href={require("../img/dossier_client_final_bon-47.jpg")}
+                              without="true"
+                              rel="noopener noreferrer"
+                              target="_blank"
+                              className="aImg"
+                            >
+                              <img
+                                src={require("../img/dossier_client_final_bon-47.jpg")}
+                                alt="logo"
+                                className="imgHorizontale"
+                              ></img>
+                            </a>
+                          </div>
+                        </div>
                       </div>
-                      <button
-                        onClick={this.clicDetailsDossierClientsMoins}
-                        style={buttonDetailsDossierClientsMoins}
-                      >
-                        -
-                      </button>
                     </div>
                   </div>
                 </div>
 
                 {/* card autre */}
-                <div class="col-md-4 col-sm-6 col-12 divCarte" style={autre}>
+                <div className="col-md-4 col-sm-6 col-12 divCarte" style={autre}>
                   <div className="carte">
                     <div className="couvCarte">
                       <div className="rond">
@@ -453,33 +705,41 @@ class Book extends Component {
                           >
                             +
                           </button>
+                          <button
+                            onClick={this.clicDetailsAutreMoins}
+                            style={buttonDetailsAutreMoins}
+                          >
+                            -
+                          </button>
                         </div>
                       </div>
                     </div>
-                    <div className="up">autre</div>
+                    <div className="upAutre"></div>
                     <div className="down">
-                      <p style={divDetailsAutre}>détails autre</p>
+                    <h6 style={titreCard}>Autres</h6>
                       <div style={detailsAutre}>
-                        <ul>
-                          <li>eerv</li>
-                          <li>eerv</li>
-                          <li>eerv</li>
-                          <li>eerv</li>
-                          <li>eerv</li>
-                          <li>eerv</li>
-                        </ul>
+                        <div className="row">
+                          <div className="col-12 divImg">
+                            <a
+                              href={require("../img/ticket_dore.jpg")}
+                              without="true"
+                              rel="noopener noreferrer"
+                              target="_blank"
+                              className="aImg"
+                            >
+                              <img
+                                src={require("../img/ticket_dore.jpg")}
+                                alt="carte_de_visite_guillaume"
+                                className="imgVerticale"
+                              ></img>
+                            </a>
+                          </div>
+                        </div>
                       </div>
-                      <button
-                        onClick={this.clicDetailsAutreMoins}
-                        style={buttonDetailsAutreMoins}
-                      >
-                        -
-                      </button>
                     </div>
                   </div>
                 </div>
-
-                <div class="col-md-4 col-sm-6 col-12 divCarte sixieme">
+                <div className="col-md-4 col-sm-6 col-12 divCarte sixieme">
                   <div className="carte">
                     <div className="couvCarte">
                       <div className="rond">

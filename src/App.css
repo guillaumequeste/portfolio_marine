@@ -88,6 +88,7 @@
 
 .texteDescription {
     margin: auto;
+    padding: 3%;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1000px) {
@@ -464,13 +465,26 @@
     background-color: white;
     border-radius: 5px;
     height: 100%;
+    box-shadow: 10px 5px 5px black;
 }
 
 .couvCarte {
     height: 100%;
-    width: 86%;
+    width: 88%;
     position: absolute;
     display: flex;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .couvCarte {
+        width: 91%;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .couvCarte {
+        width: 93%;
+    }
 }
 
 .rond {
@@ -478,26 +492,68 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color: green;
+    background-color: white;
     display: flex;
+    border: solid 1px black;
 }
 
 .rond2 {
     margin: auto;
 }
 
-.up {
+.upCarteDeVisite {
     height: 50%;
     width: 100%;
-    background-color: blue;
+    background-color: var(--color-presentation);
     z-index: 1;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.upFairePart {
+    height: 50%;
+    width: 100%;
+    background-color: var(--color-etudes);
+    z-index: 1;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.upAffiche {
+    height: 50%;
+    width: 100%;
+    background-color: var(--color-centres_d_interets);
+    z-index: 1;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.upDossierClients {
+    height: 50%;
+    width: 100%;
+    background-color: var(--color-competences);
+    z-index: 1;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.upAutre {
+    height: 50%;
+    width: 100%;
+    background-color: var(--color-contact);
+    z-index: 1;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .down {
     min-height: 50%;
     width: 100%;
-    background-color: grey;
+    background-color: white;
     z-index: 1;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: soli 1px black;
 }
 
 .sixieme {
@@ -506,7 +562,6 @@
 
 .divImg {
     display: flex;
-    margin-top: 20%;
     padding: 2%;
 }
 
@@ -522,13 +577,25 @@
     }
 }
 
-.aImgHorizontale {
+.aImg {
     margin: auto;
 }
 
 .imgHorizontale {
     width: 200px;
     height: 150px;
+}
+
+@media screen and (min-width: 1024px) {
+    .imgHorizontale {
+        width: 260px;
+        height: 230px;
+    }
+}
+
+.imgVerticale {
+    width: 200px;
+    height: 250px;
 }
 
 
