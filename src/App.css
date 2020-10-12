@@ -449,12 +449,12 @@
 }
 
 .col-md-4 {
-    height: 40vh;
+    min-height: 40vh;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .col-md-4 {
-        height: 30vh;
+        min-height: 30vh;
     }
 }
 
@@ -465,7 +465,6 @@
 .carte {
     margin: 2%;
     background-color: white;
-    border: solid 1px Black;
     border-radius: 5px;
     height: 100%;
 }
@@ -499,10 +498,14 @@
 }
 
 .down {
-    height: 50%;
+    min-height: 50%;
     width: 100%;
     background-color: grey;
     z-index: 1;
+}
+
+.sixieme {
+    display: none;
 }
 
 
