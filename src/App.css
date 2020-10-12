@@ -445,19 +445,64 @@
 
 .detailsBook {
     background-color: var(--color-book);
-    height: 81vh;
+    min-height: 81vh;
 }
 
-@media screen and (min-width: 768px) {
-    .detailsBook {
-        height: 78vh;
+.col-md-4 {
+    height: 40vh;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .col-md-4 {
+        height: 30vh;
     }
 }
 
-@media screen and (min-width: 1300px) {
-    .detailsBook {
-        height: 75vh;
-    }
+.divCarte {
+    margin: 2% 0;
+}
+
+.carte {
+    margin: 2%;
+    background-color: white;
+    border: solid 1px Black;
+    border-radius: 5px;
+    height: 100%;
+}
+
+.couvCarte {
+    height: 100%;
+    width: 86%;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+}
+
+.rond {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: green;
+    display: flex;
+}
+
+.rond2 {
+    margin: auto;
+}
+
+.up {
+    height: 50%;
+    width: 100%;
+    background-color: blue;
+    z-index: 1;
+}
+
+.down {
+    height: 50%;
+    width: 100%;
+    background-color: grey;
+    z-index: 1;
 }
 
 
