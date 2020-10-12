@@ -205,6 +205,8 @@ class Book extends Component {
       carteDeVisite.minWidth = "100%";
       detailsBook.height = "125vh";
     }
+  
+
     if (this.state.detailsFairePart === true) {
       detailsFairePart.display = "block";
       detailsFairePart.boxShadow = "10px 5px 5px black";
@@ -229,7 +231,7 @@ class Book extends Component {
       dossierClients.display = "none";
       autre.display = "none";
       affiche.minWidth = "100%";
-      detailsBook.height = "190vh";
+      detailsBook.height = "250vh";
     }
     if (this.state.detailsDossierClients === true) {
       detailsDossierClients.display = "block";
@@ -267,7 +269,7 @@ class Book extends Component {
         <Header />
         <div className="bodyPage">
           <EnTete />
-          <div className="detailsBook" style={detailsBook}>
+          <div style={detailsBook}  className="detailsBook">
             <div className="container">
               <div className="row">
                 {/* card carte de visite */}

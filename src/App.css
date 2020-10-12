@@ -449,6 +449,63 @@
     min-height: 81vh;
 }
 
+.fondCarteDeVisite {
+    background-color: var(--color-book);
+    height: 180vh;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .fondCarteDeVisite {
+        background-color: var(--color-book);
+        height: 80vh;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .fondCarteDeVisite {
+        background-color: var(--color-book);
+        height: 100vh;
+    }
+}
+
+.fondFairePart {
+    background-color: var(--color-book);
+    height: 300vh;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .fondFairePart {
+        background-color: var(--color-book);
+        height: 100vh;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .fondFairePart {
+        background-color: var(--color-book);
+        height: 250vh;
+    }
+}
+
+.fondAffiche {
+    background-color: var(--color-book);
+    height: 300vh;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .fondAffiche {
+        background-color: var(--color-book);
+        height: 100vh;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .fondAffiche {
+        background-color: var(--color-book);
+        height: 200vh;
+    }
+}
+
 .divCarte {
     min-height: 40vh;
     margin: 2% 0;
@@ -596,6 +653,13 @@
 .imgVerticale {
     width: 200px;
     height: 250px;
+}
+
+@media screen and (min-width: 700px) and (max-width: 768px) {
+    .imgVerticale {
+        width: 180px;
+        height: 230px;
+    }
 }
 
 
@@ -858,8 +922,23 @@
     margin-bottom: 2%;
 }
 
+.typeEtude_nom_vertical {
+    display: flex;
+    width: 70px;
+    height: 100px;
+    border: solid 1px white;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
 .typeEtude_nom_h5 {
     margin: auto;
+}
+
+.logoEcole {
+    width: 100%;
+    height: 100%;
 }
 
 .typeEtude_nom_p {
