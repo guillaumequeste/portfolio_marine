@@ -8,30 +8,49 @@ class CarteDeVisite extends Component {
     return (
       <div>
         <Helmet
-          title={"Book Portfolio de Marine Queste, chef de projet"}
+          title={
+            "Book cartes de visite Portfolio de Marine Queste, chef de projet"
+          }
           link={"https://marinequeste.fr/carte_de_visite"}
         />
         <Header />
         <div className="bodyPage">
           <EnTete />
-          <div className="detailsBook">
-            <div className="container">
-              <div className="row">
-                {/* card carte de visite */}
-                <div className="col-md-4 col-sm-6 col-12 divCarte">
-                  <div className="carte">
-                    <div className="couvCarte">
-                      <div className="rond">
-                        <div className="rond2">
-                          <button>+</button>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="up upCarteDeVisite"></div>
-                    <div className="down">
-                      <h6 className="titreDown">Cartes de visite</h6>
-                    </div>
-                  </div>
+          <div className="bodyBookDetails">
+            <div className="cardDetails">
+              <div className="upDetails upDetailsCarte">
+                <h5 className="titreCardDetails">Cartes de visite</h5>
+              </div>
+              <div className="downDetails">
+                <div className="divImgHorizontale">
+                  <a
+                    href={require("../img/carte_de_visite_guillaume.jpg")}
+                    without="true"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    className="aImg"
+                  >
+                    <img
+                      src={require("../img/carte_de_visite_guillaume.jpg")}
+                      alt="carte de visite Guillaume"
+                      className="imgHorizontale"
+                    ></img>
+                  </a>
+                </div>
+                <div className="divImgHorizontale">
+                  <a
+                    href={require("../img/logo.jpg")}
+                    without="true"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    className="aImg"
+                  >
+                    <img
+                      src={require("../img/logo.jpg")}
+                      alt="logo"
+                      className="imgHorizontale"
+                    ></img>
+                  </a>
                 </div>
               </div>
             </div>

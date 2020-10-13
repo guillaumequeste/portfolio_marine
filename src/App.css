@@ -444,7 +444,7 @@
 
 /* Book */
 
-.detailsBook {
+.bodyBook {
     background-color: var(--color-book);
     min-height: 81vh;
     padding-bottom: 5%;
@@ -544,7 +544,7 @@
     z-index: 1;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    border-top: soli 1px black;
+    border-top: solid 1px black;
 }
 
 .titreDown {
@@ -572,6 +572,108 @@
 
 .sixieme {
     display: none;
+}
+
+
+/* Carte de visite */
+
+.bodyBookDetails {
+    background-color: var(--color-book);
+    min-height: 81vh;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
+.cardDetails {
+    width: 80%;
+    min-height: 30vh;
+    margin: auto;
+    box-shadow: 10px 5px 5px black;
+}
+
+.upDetails {
+    height: 100px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+}
+
+.upDetailsCarte {
+    background-color: var(--color-presentation);
+}
+
+.upDetailsFairepart {
+    background-color: var(--color-etudes);
+}
+
+.titreCardDetails {
+    margin: auto;
+}
+
+.titreCardDetailsFairepart {
+    color: white;
+    margin: auto;
+}
+
+.downDetails {
+    min-height: 35vh;
+    background-color: white;
+    padding: 2% 0 2% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    border: white solid;
+}
+
+@media screen and (min-width: 768px) {
+    .downDetails {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+}
+
+.divImgHorizontale {
+    text-align: center;
+    padding: 4%;
+}
+
+.imgHorizontale {
+    width: 180px;
+    border: solid 1px black;
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px black;
+}
+
+@media screen and (min-width: 768px) {
+    .downDetails {
+        flex-direction: row;
+    }
+    .divImgHorizontale {
+        padding: 2%;
+    }
+    .imgHorizontale {
+        width: 260px;
+    }
+}
+
+.imgVerticale {
+    width: 180px;
+    border: solid 1px black;
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px black;
+}
+
+@media screen and (min-width: 768px) {
+    .downDetails {
+        flex-direction: row;
+    }
+    .divImgHorizontale {
+        padding: 2% 5% 2% 5%;
+    }
+    .imgVerticale {
+        width: 250px;
+    }
 }
 
 
@@ -983,7 +1085,8 @@
 }
 
 .nav-link {
-    background-color: white;
+    background-color: white !important;
+    ;
     z-index: 100 !important;
     color: rgb(89, 13, 43) !important;
     font-weight: bold;

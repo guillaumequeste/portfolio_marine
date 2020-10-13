@@ -8,30 +8,80 @@ class FairePart extends Component {
     return (
       <div>
         <Helmet
-          title={"Book Portfolio de Marine Queste, chef de projet"}
+          title={"Book faireparts Portfolio de Marine Queste, chef de projet"}
           link={"https://marinequeste.fr/faire_part"}
         />
         <Header />
         <div className="bodyPage">
           <EnTete />
-          <div className="detailsBook">
-            <div className="container">
-              <div className="row">
-                {/* card carte de visite */}
-                <div className="col-md-4 col-sm-6 col-12 divCarte">
-                  <div className="carte">
-                    <div className="couvCarte">
-                      <div className="rond">
-                        <div className="rond2">
-                          <button>+</button>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="up upCarteDeVisite"></div>
-                    <div className="down">
-                      <h6 className="titreDown">Faireparts</h6>
-                    </div>
-                  </div>
+          <div className="bodyBookDetails">
+            <div className="cardDetails">
+              <div className="upDetails upDetailsFairepart">
+                <h5 className="titreCardDetailsFairepart">Faireparts</h5>
+              </div>
+              <div className="downDetails">
+                <div className="divImgHorizontale">
+                  <a
+                    href={require("../img/faire_part_bon-1.jpg")}
+                    without="true"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    className="aImg"
+                  >
+                    <img
+                      src={require("../img/faire_part_bon-1.jpg")}
+                      alt="faire_part_bon-1.jpg"
+                      className="imgVerticale"
+                    ></img>
+                  </a>
+                </div>
+                <div className="divImgHorizontale">
+                  <a
+                    href={require("../img/faire_part_bon-2.jpg")}
+                    without="true"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    className="aImg"
+                  >
+                    <img
+                      src={require("../img/faire_part_bon-2.jpg")}
+                      alt="faire_part_bon-2"
+                      className="imgVerticale"
+                    ></img>
+                  </a>
+                </div>
+              </div>
+              <div className="downDetails">
+                <div className="divImgHorizontale">
+                  <a
+                    href={require("../img/faire_part_bon-3.jpg")}
+                    without="true"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    className="aImg"
+                  >
+                    <img
+                      src={require("../img/faire_part_bon-3.jpg")}
+                      alt="faire_part_bon-3"
+                      className="imgVerticale"
+                    ></img>
+                  </a>
+                </div>
+
+                <div className="divImgHorizontale">
+                  <a
+                    href={require("../img/faire_part_bon-4.jpg")}
+                    without="true"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    className="aImg"
+                  >
+                    <img
+                      src={require("../img/faire_part_bon-4.jpg")}
+                      alt="faire_part_bon-4.jpg"
+                      className="imgVerticale"
+                    ></img>
+                  </a>
                 </div>
               </div>
             </div>

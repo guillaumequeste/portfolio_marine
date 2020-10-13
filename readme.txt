@@ -22,3 +22,15 @@ background-color: rgba(255, 255, 255, 0);
                 PDF
               </button>
             </a>
+
+            <img
+              src={require("../img/carte_de_visite_guillaume.jpg")}
+              alt="carte de visite Guillaume"
+              className="imgHorizontale"
+            ></img>
+
+            <img
+              src={require("../img/logo.jpg")}
+              alt="logo"
+              className="imgHorizontale"
+            ></img>

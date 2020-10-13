@@ -15,7 +15,7 @@ class Book extends Component {
         <Header />
         <div className="bodyPage">
           <EnTete />
-          <div className="detailsBook">
+          <div className="bodyBook">
             <div className="container">
               <div className="row">
                 {/* card carte de visite */}
