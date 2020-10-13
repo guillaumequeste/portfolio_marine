@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Header from "./Header";
 import Helmet from "./Helmet";
 import EnTete from "./EnTete";
+import { NavLink } from "react-router-dom";
 
 class Book extends Component {
   render() {
@@ -21,11 +22,9 @@ class Book extends Component {
                 <div className="col-md-4 col-sm-6 col-12 divCarte">
                   <div className="carte">
                     <div className="couvCarte">
-                      <div className="rond">
-                        <div className="rond2">
-                          <button>+</button>
-                        </div>
-                      </div>
+                      <NavLink className="nav-link aRond" to="/carte_de_visite">
+                        <div className="lienCarte">+</div>
+                      </NavLink>
                     </div>
                     <div className="up upCarteDeVisite"></div>
                     <div className="down">
@@ -38,11 +37,9 @@ class Book extends Component {
                 <div className="col-md-4 col-sm-6 col-12 divCarte">
                   <div className="carte">
                     <div className="couvCarte">
-                      <div className="rond">
-                        <div className="rond2">
-                          <button>+</button>
-                        </div>
-                      </div>
+                      <NavLink className="nav-link aRond" to="/faire_part">
+                        <div className="lienCarte">+</div>
+                      </NavLink>
                     </div>
                     <div className="up upFairePart"></div>
                     <div className="down">
@@ -55,11 +52,9 @@ class Book extends Component {
                 <div className="col-md-4 col-sm-6 col-12 divCarte">
                   <div className="carte">
                     <div className="couvCarte">
-                      <div className="rond">
-                        <div className="rond2">
-                          <button>+</button>
-                        </div>
-                      </div>
+                      <NavLink className="nav-link aRond" to="/affiche">
+                        <div className="lienCarte">+</div>
+                      </NavLink>
                     </div>
                     <div className="up upAffiche"></div>
                     <div className="down">
@@ -72,11 +67,9 @@ class Book extends Component {
                 <div className="col-md-4 col-sm-6 col-12 divCarte">
                   <div className="carte">
                     <div className="couvCarte">
-                      <div className="rond">
-                        <div className="rond2">
-                          <button>+</button>
-                        </div>
-                      </div>
+                      <NavLink className="nav-link aRond" to="/dossier_clients">
+                        <div className="lienCarte">+</div>
+                      </NavLink>
                     </div>
                     <div className="up upDossierClients"></div>
                     <div className="down">
@@ -89,11 +82,9 @@ class Book extends Component {
                 <div className="col-md-4 col-sm-6 col-12 divCarte">
                   <div className="carte">
                     <div className="couvCarte">
-                      <div className="rond">
-                        <div className="rond2">
-                          <button>+</button>
-                        </div>
-                      </div>
+                      <NavLink className="nav-link aRond" to="/autre">
+                        <div className="lienCarte">+</div>
+                      </NavLink>
                     </div>
                     <div className="up upAutre"></div>
                     <div className="down">

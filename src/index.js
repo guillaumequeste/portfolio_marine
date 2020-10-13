@@ -16,6 +16,11 @@ import Competences from './components/Competences'
 import Etudes from './components/Etudes'
 import Experiences_additionnelles from './components/Experiences_additionnelles'
 import Experiences_professionnelles from './components/Experiences_professionnelles'
+import CarteDeVisite from './components/CarteDeVisite'
+import FairePart from './components/FairePart'
+import Affiche from './components/Affiche'
+import DossierClients from './components/DossierClients'
+import Autre from './components/Autre'
 import About_Me from './components/About_Me'
 import Contact from './components/Contact'
 import NotFound from './components/NotFound'
@@ -37,6 +42,11 @@ const Root = () => (
       <Route path="/etudes" component={Etudes} />
       <Route path="/experiences_additionnelles" component={Experiences_additionnelles} />
       <Route path="/experiences_professionnelles" component={Experiences_professionnelles} />
+      <Route path="/carte_de_visite" component={CarteDeVisite} />
+      <Route path="/faire_part" component={FairePart} />
+      <Route path="/affiche" component={Affiche} />
+      <Route path="/dossier_clients" component={DossierClients} />
+      <Route path="/autre" component={Autre} />
 
       <Route path="/contact" component={Contact} />
       <Route path="/notfound" component={NotFound} />
