@@ -447,73 +447,24 @@
 .detailsBook {
     background-color: var(--color-book);
     min-height: 81vh;
-}
-
-.fondCarteDeVisite {
-    background-color: var(--color-book);
-    height: 180vh;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .fondCarteDeVisite {
-        background-color: var(--color-book);
-        height: 80vh;
-    }
-}
-
-@media screen and (min-width: 1025px) {
-    .fondCarteDeVisite {
-        background-color: var(--color-book);
-        height: 100vh;
-    }
-}
-
-.fondFairePart {
-    background-color: var(--color-book);
-    height: 300vh;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .fondFairePart {
-        background-color: var(--color-book);
-        height: 100vh;
-    }
-}
-
-@media screen and (min-width: 1025px) {
-    .fondFairePart {
-        background-color: var(--color-book);
-        height: 250vh;
-    }
-}
-
-.fondAffiche {
-    background-color: var(--color-book);
-    height: 300vh;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .fondAffiche {
-        background-color: var(--color-book);
-        height: 100vh;
-    }
-}
-
-@media screen and (min-width: 1025px) {
-    .fondAffiche {
-        background-color: var(--color-book);
-        height: 200vh;
-    }
+    padding-bottom: 5%;
 }
 
 .divCarte {
-    min-height: 40vh;
-    margin: 2% 0;
+    min-height: 30vh;
+    margin: 4% 0;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .divCarte {
         min-height: 30vh;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .divCarte {
+        min-height: 30vh;
+        margin-bottom: 0;
     }
 }
 
@@ -558,49 +509,32 @@
     margin: auto;
 }
 
-.upCarteDeVisite {
+.up {
     height: 50%;
     width: 100%;
-    background-color: var(--color-presentation);
     z-index: 1;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+}
+
+.upCarteDeVisite {
+    background-color: var(--color-presentation);
 }
 
 .upFairePart {
-    height: 50%;
-    width: 100%;
     background-color: var(--color-etudes);
-    z-index: 1;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
 }
 
 .upAffiche {
-    height: 50%;
-    width: 100%;
     background-color: var(--color-centres_d_interets);
-    z-index: 1;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
 }
 
 .upDossierClients {
-    height: 50%;
-    width: 100%;
     background-color: var(--color-competences);
-    z-index: 1;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
 }
 
 .upAutre {
-    height: 50%;
-    width: 100%;
     background-color: var(--color-contact);
-    z-index: 1;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
 }
 
 .down {
@@ -613,53 +547,31 @@
     border-top: soli 1px black;
 }
 
-.sixieme {
-    display: none;
+.titreDown {
+    padding-top: 22%;
+    text-align: center;
 }
 
-.divImg {
-    display: flex;
-    padding: 2%;
+@media screen and (min-width: 540px) and (max-width: 767px) {
+    .titreDown {
+        padding-top: 13%;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .divImg {
-        margin-top: 8%;
+    .titreDown {
+        padding-top: 35%;
     }
 }
 
 @media screen and (min-width: 1025px) {
-    .divImg {
-        margin-top: 5%;
+    .titreDown {
+        padding-top: 20%;
     }
 }
 
-.aImg {
-    margin: auto;
-}
-
-.imgHorizontale {
-    width: 200px;
-    height: 150px;
-}
-
-@media screen and (min-width: 1024px) {
-    .imgHorizontale {
-        width: 260px;
-        height: 230px;
-    }
-}
-
-.imgVerticale {
-    width: 200px;
-    height: 250px;
-}
-
-@media screen and (min-width: 700px) and (max-width: 768px) {
-    .imgVerticale {
-        width: 180px;
-        height: 230px;
-    }
+.sixieme {
+    display: none;
 }
 
 
