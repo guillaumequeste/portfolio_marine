@@ -260,7 +260,7 @@
 .case:hover {
     color: rgb(2, 34, 102);
     text-decoration: none;
-    background-color: rgb(214, 208, 208);
+    background-color: rgb(89, 13, 43);
     border-radius: 5px;
 }
 
@@ -283,11 +283,6 @@
         height: 47vh;
         clip-path: polygon(50% 0, 100% 0, 100% 100%);
         z-index: 5;
-    }
-    .presentation:hover {
-        background-image: url("img/int_maison_1.jpg");
-        background-repeat: no-repeat;
-        background-position: right;
     }
     .titre_presentation {
         position: fixed;

@@ -34,3 +34,10 @@ background-color: rgba(255, 255, 255, 0);
               alt="logo"
               className="imgHorizontale"
             ></img>
+
+
+.presentation:hover {
+        background-image: url("img/int_maison_1.jpg");
+        background-repeat: no-repeat;
+        background-position: right;
+    }
