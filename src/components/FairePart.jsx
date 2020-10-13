@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Header from "./Header";
 import Helmet from "./Helmet";
 import EnTete from "./EnTete";
+import { NavLink } from "react-router-dom";
 
 class FairePart extends Component {
   render() {
@@ -15,10 +16,16 @@ class FairePart extends Component {
         <div className="bodyPage">
           <EnTete />
           <div className="bodyBookDetails">
+            <div className="retourBook">
+              <NavLink to="/book" type="button" class="btn btn-primary">
+                Retour au book
+              </NavLink>
+            </div>
             <div className="cardDetails">
               <div className="upDetails upDetailsFairepart">
                 <h5 className="titreCardDetailsFairepart">Faireparts</h5>
               </div>
+
               <div className="downDetails">
                 <div className="divImgHorizontale">
                   <a
@@ -51,6 +58,7 @@ class FairePart extends Component {
                   </a>
                 </div>
               </div>
+
               <div className="downDetails">
                 <div className="divImgHorizontale">
                   <a
@@ -67,7 +75,6 @@ class FairePart extends Component {
                     ></img>
                   </a>
                 </div>
-
                 <div className="divImgHorizontale">
                   <a
                     href={require("../img/faire_part_bon-4.jpg")}
@@ -83,6 +90,25 @@ class FairePart extends Component {
                     ></img>
                   </a>
                 </div>
+              </div>
+
+              <div className="downDetails">
+                <div className="divImgHorizontale">
+                  <a
+                    href={require("../img/remerciements.jpg")}
+                    without="true"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    className="aImg"
+                  >
+                    <img
+                      src={require("../img/remerciements.jpg")}
+                      alt="remerciements"
+                      className="imgVerticale"
+                    ></img>
+                  </a>
+                </div>
+
               </div>
             </div>
           </div>

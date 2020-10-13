@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Header from "./Header";
 import Helmet from "./Helmet";
 import EnTete from "./EnTete";
+import { NavLink } from "react-router-dom";
 
 class CarteDeVisite extends Component {
   render() {
@@ -17,6 +18,12 @@ class CarteDeVisite extends Component {
         <div className="bodyPage">
           <EnTete />
           <div className="bodyBookDetails">
+            <div className="retourBook">
+              <NavLink to="/book" type="button" class="btn btn-primary">
+                Retour au book
+              </NavLink>
+            </div>
+
             <div className="cardDetails">
               <div className="upDetails upDetailsCarte">
                 <h5 className="titreCardDetails">Cartes de visite</h5>

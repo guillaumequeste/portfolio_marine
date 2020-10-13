@@ -584,11 +584,22 @@
     padding-bottom: 5%;
 }
 
+.retourBook {
+    text-align: center;
+}
+
 .cardDetails {
     width: 80%;
     min-height: 30vh;
     margin: auto;
     box-shadow: 10px 5px 5px black;
+    margin-top: 5%;
+}
+
+@media screen and (min-width: 768px) {
+    .cardDetails {
+        margin-top: 2%;
+    }
 }
 
 .upDetails {
@@ -604,6 +615,18 @@
 
 .upDetailsFairepart {
     background-color: var(--color-etudes);
+}
+
+.upDetailsAffiche {
+    background-color: var(--color-centres_d_interets);
+}
+
+.upDetailsDossierClients {
+    background-color: var(--color-competences);
+}
+
+.upDetailsAffiche {
+    background-color: var(--color-contact);
 }
 
 .titreCardDetails {
