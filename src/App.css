@@ -705,18 +705,11 @@
 .detailsCentres {
     background-color: var(--color-centres_d_interets);
     height: 81vh;
+    display: flex;
 }
 
-@media screen and (min-width: 768px) {
-    .detailsCentres {
-        height: 78vh;
-    }
-}
-
-@media screen and (min-width: 1300px) {
-    .detailsCentres {
-        height: 75vh;
-    }
+.enConstruction {
+    margin: auto;
 }
 
 
@@ -1020,12 +1013,36 @@
     min-height: 81vh;
 }
 
+.exp_add {
+    min-height: 20vh;
+    border-bottom: solid 1px white;
+    padding-top: 2%;
+}
+
+.titreExpAdd {
+    background-color: white;
+    text-align: center;
+    margin: 0 5%;
+}
+
+.duree {
+    text-align: center;
+    padding-top: 2%;
+    font-weight: bold;
+}
+
+.detailsExpAdd {
+    text-align: justify;
+    padding: 2% 5%;
+}
+
 
 /* Experiences professionnelles */
 
 .detailsExp_pro {
     background-color: var(--color-experiences_professionnelles);
     min-height: 81vh;
+    width: 100%;
     padding: 5% 0 5% 0;
 }
 
@@ -1098,6 +1115,7 @@
 
 .navbar {
     height: 7vh;
+    width: 100vw;
     z-index: 100 !important;
 }
 

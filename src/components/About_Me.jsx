@@ -45,7 +45,7 @@ class About_Me extends Component {
                     celui qu'on fait l'un vers l'autre."
                   </p>
                   <p>
-                    <b>Alors voyageon ensemble !</b>
+                    <b>Alors voyageons ensemble !</b>
                   </p>
                   <a
                     href={file}

@@ -15,7 +15,7 @@ class Centres_d_interets extends Component {
         <div className="bodyPage">
           <EnTete />
           <div className="detailsCentres">
-            <p>centres d'intérêts</p>
+            <h1 className="enConstruction">En construction</h1>
           </div>
         </div>
       </div>
