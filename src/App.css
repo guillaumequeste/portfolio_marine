@@ -1116,7 +1116,7 @@
 .navbar {
     height: 7vh;
     width: 100vw;
-    z-index: 100 !important;
+    z-index: 10000 !important;
 }
 
 .backgroundNavbar {
