@@ -26,7 +26,7 @@ class Centres_d_interets extends Component {
                       <div class="hexagonemainbefore danse"></div>
                     </div>
                   </div>
-                  <p className="titreCentre">en construction</p>
+                  <p className="titreCentre">essai</p>
                 </div>
               </div>
               <div className="col-12 col-sm-6 col-md-4 centre">
@@ -36,7 +36,7 @@ class Centres_d_interets extends Component {
                       <div class="hexagonemainbefore montage"></div>
                     </div>
                   </div>
-                  <p className="titreCentre">en construction</p>
+                  <p className="titreCentre">essai</p>
                 </div>
               </div>
               <div className="col-12 col-sm-6 col-md-4 centre">
@@ -46,7 +46,7 @@ class Centres_d_interets extends Component {
                       <div class="hexagonemainbefore voyages"></div>
                     </div>
                   </div>
-                  <p className="titreCentre">en construction</p>
+                  <p className="titreCentre">essai</p>
                 </div>
               </div>
               <div className="col-12 col-sm-6 col-md-4 centre">
@@ -56,7 +56,7 @@ class Centres_d_interets extends Component {
                       <div class="hexagonemainbefore musique"></div>
                     </div>
                   </div>
-                  <p className="titreCentre">en construction</p>
+                  <p className="titreCentre">essai</p>
                 </div>
               </div>
               <div className="col-12 col-sm-6 col-md-4 centre">
