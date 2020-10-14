@@ -66,31 +66,46 @@ class About_Me extends Component {
                   <p className="pAdresse">458 Chemin des Meuniers</p>
                   <p className="pAdresse">THIBERMONT</p>
                   <p className="pAdresse">76370 MARTIN-EGLISE</p>
-                  <p className="pAdresse">Tél : 06 8545678</p>
+                  <p className="pAdresse">Tél : 06 50 66 81 48</p>
                 </div>
               </div>
               <div className="comptes">
                 <div className="detailsComptes">
                   <div>
-                    <img
-                      src={require("../img/facebook.png")}
-                      alt="facebook"
-                      className="facebook"
-                    ></img>
+                    <a
+                      href="https://www.facebook.com/marine.queste"
+                      target="_blank"
+                    >
+                      <img
+                        src={require("../img/facebook.png")}
+                        alt="facebook"
+                        className="facebook"
+                      ></img>
+                    </a>
                   </div>
                   <div>
-                    <img
-                      src={require("../img/instagram.png")}
-                      alt="facebook"
-                      className="instagram"
-                    ></img>
+                    <a
+                      href="https://www.instagram.com/marineqst/"
+                      target="_blank"
+                    >
+                      <img
+                        src={require("../img/instagram.png")}
+                        alt="facebook"
+                        className="instagram"
+                      ></img>
+                    </a>
                   </div>
                   <div>
-                    <img
-                      src={require("../img/linkedin.png")}
-                      alt="facebook"
-                      className="linkedin"
-                    ></img>
+                    <a
+                      href="https://www.linkedin.com/in/marine-queste-463727b0/"
+                      target="_blank"
+                    >
+                      <img
+                        src={require("../img/linkedin.png")}
+                        alt="facebook"
+                        className="linkedin"
+                      ></img>
+                    </a>
                   </div>
                 </div>
               </div>

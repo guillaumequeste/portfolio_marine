@@ -1122,7 +1122,6 @@
 
 .nav-link {
     background-color: white !important;
-    ;
     z-index: 100 !important;
     color: rgb(89, 13, 43) !important;
     font-weight: bold;
@@ -1131,6 +1130,12 @@
 @media screen and (min-width: 768px) {
     .nav-link {
         background-color: rgba(255, 255, 255, 0);
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1030px) {
+    .nav-link {
+        height: 5vh;
     }
 }
 
@@ -1143,4 +1148,33 @@
     border: solid white;
     background-color: white;
     height: 7vh;
+}
+
+
+/* Not Found */
+
+.bodyNotFound {
+    background-color: black;
+    min-height: 81vh;
+    color: white;
+    display: flex;
+}
+
+.messageNotFound {
+    margin: auto;
+}
+
+.retourAccueil {
+    color: white;
+}
+
+.retourAccueil:hover {
+    text-decoration: none;
+    color: yellow;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .retourAccueil {
+        font-size: 2rem;
+    }
 }
