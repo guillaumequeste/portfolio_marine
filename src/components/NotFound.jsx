@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Header from "./Header";
 import Helmet from "./Helmet";
 import EnTete from "./EnTete";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 class NotFound extends Component {
   render() {
@@ -17,8 +17,16 @@ class NotFound extends Component {
           <EnTete />
           <div className="bodyNotFound">
             <div className="messageNotFound">
-              <p>Il n' y a rien ici...</p>
-              <Link to="/" className="retourAccueil">Retour à l'accueil</Link>
+              <div>
+                <img
+                  src={require("../img/worst.gif")}
+                  alt="gif"
+                  className="gif"
+                ></img>
+              </div>
+              <Link to="/" className="retourAccueil">
+                Retour à l'accueil
+              </Link>
             </div>
           </div>
         </div>

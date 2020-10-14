@@ -307,7 +307,7 @@ class Experiences_professionnelles extends Component {
                           </li>
                           <li>
                             Fêtes de Noël (réservation du restaurant, affiches,
-                            cartons d'invitation, lancement de concours, * de la
+                            cartons d'invitation, lancement de concours, organisation de la
                             soirée...)
                           </li>
                         </ul>

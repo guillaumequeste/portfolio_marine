@@ -38,165 +38,6 @@
 }
 
 
-/* About me */
-
-.detailsPresentation {
-    background-color: var(--color-presentation);
-    min-height: 81vh;
-}
-
-.detailsPresentation_container {
-    display: flex;
-    flex-direction: column;
-    min-height: 61vh;
-}
-
-@media screen and (min-width: 768px) {
-    .detailsPresentation_container {
-        flex-direction: row;
-    }
-}
-
-.photoMarine {
-    display: flex;
-}
-
-.imgPhotoMarine {
-    width: 90%;
-    margin: auto;
-    padding: 2%;
-}
-
-.description {
-    text-align: justify;
-    display: flex;
-}
-
-@media screen and (min-width: 768px) {
-    .photoMarine {
-        width: 40vw;
-    }
-    .description {
-        width: 60vw;
-    }
-}
-
-.titreDescription {
-    text-align: center;
-    padding-top: 2%;
-}
-
-.texteDescription {
-    margin: auto;
-    padding: 3%;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1000px) {
-    .texteDescription {
-        font-size: 1.2em;
-    }
-}
-
-@media screen and (min-width: 1001px) and (max-width: 1024px) {
-    .texteDescription {
-        font-size: 1.5em;
-    }
-}
-
-.buttonCV {
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family: 'Fira Sans Condensed', sans-serif;
-    color: white;
-    background-color: transparent;
-    border: 1px solid white;
-    margin-top: 20px;
-    padding: 18px 50px;
-    border-radius: 3px;
-    transition: all 0.3s ease-in 0s;
-    display: inline-block;
-    margin-bottom: 5%;
-}
-
-.buttonCV:hover {
-    background: white;
-    color: black;
-    text-decoration: none;
-}
-
-.liens {
-    display: flex;
-    flex-direction: column;
-    min-height: 20vh;
-    border-top: solid 1px;
-}
-
-@media screen and (min-width: 768px) {
-    .liens {
-        flex-direction: row;
-    }
-}
-
-.adresse {
-    display: flex;
-}
-
-@media screen and (min-width: 768px) {
-    .adresse {
-        width: 50vw;
-    }
-    .comptes {
-        width: 50vw;
-    }
-}
-
-.detailsAdresse {
-    margin: auto;
-}
-
-.pAdresse {
-    margin: 0;
-}
-
-.comptes {
-    display: flex;
-}
-
-.detailsComptes {
-    margin: auto;
-    width: 50vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.facebook {
-    width: 20px;
-    background: rgb(66, 103, 178);
-}
-
-.instagram {
-    width: 20px;
-}
-
-.linkedin {
-    width: 20px;
-    background: rgb(40, 103, 178);
-}
-
-@media screen and (min-width: 768px) {
-    .facebook {
-        width: 50px;
-    }
-    .instagram {
-        width: 50px;
-    }
-    .linkedin {
-        width: 50px;
-    }
-}
-
-
 /* App */
 
 .bodyPhoto {
@@ -427,7 +268,9 @@
 .titre_domaine {
     text-align: center;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.3rem;
+    font-family: 'Palatino', sans-serif;
+    font-style: italic;
 }
 
 @media screen and (max-width: 319px) {
@@ -575,6 +418,8 @@
 .titreDown {
     padding-top: 22%;
     text-align: center;
+    font-family: 'Palatino', sans-serif;
+    font-style: italic;
 }
 
 @media screen and (min-width: 540px) and (max-width: 767px) {
@@ -803,23 +648,23 @@
 }
 
 .danse {
-    background-image: url("img/int_rotate.jpg");
+    background-image: url("img/danse.jpg");
 }
 
 .montage {
-    background-image: url("img/faire_part_bon-3.jpg");
+    background-image: url("img/montage.jpg");
 }
 
 .voyages {
-    background-image: url("img/int_rotate.jpg");
+    background-image: url("img/voyages.jpg");
 }
 
 .musique {
-    background-image: url("img/int_rotate.jpg");
+    background-image: url("img/musique.jpg");
 }
 
 .bullet {
-    background-image: url("img/int_rotate.jpg");
+    background-image: url("img/bullet.jpg");
 }
 
 .hexagone .hexagonecontent {
@@ -847,6 +692,8 @@
 
 .titreCentre {
     margin: auto;
+    font-family: 'Palatino', sans-serif;
+    font-style: italic;
 }
 
 
@@ -896,6 +743,9 @@
 .titreDomaine {
     margin-left: 5%;
     color: white;
+    font-family: 'Futurist', sans-serif;
+    padding-bottom: 2%;
+    font-weight: bold;
 }
 
 .liSousBloc {
@@ -945,7 +795,7 @@
 .domaineAutres {
     color: white;
     width: 100%;
-    font-size: 1.5em;
+    font-size: 1em;
     padding-top: 2%;
 }
 
@@ -1121,6 +971,8 @@
 
 .descEtude_nom_h5 {
     text-align: center;
+    font-family: 'Futurist', sans-serif;
+    font-weight: bold;
 }
 
 .descEtude_nom_p {
@@ -1160,6 +1012,9 @@
     background-color: white;
     text-align: center;
     margin: 0 5%;
+    font-family: 'Microsoft', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
 }
 
 .duree {
@@ -1234,6 +1089,8 @@
 
 .fontWeightBold {
     font-weight: bold;
+    font-family: 'Microsoft', sans-serif;
+    font-size: 2em;
 }
 
 .whiteSpaceNormal {
@@ -1245,6 +1102,7 @@
 .bBlack {
     font-weight: bold;
     color: black;
+    font-style: italic;
 }
 
 
@@ -1304,10 +1162,30 @@
 
 .messageNotFound {
     margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.gif {
+    width: 200px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .gif {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .gif {
+        width: 400px;
+    }
 }
 
 .retourAccueil {
     color: white;
+    padding-top: 5%;
+    text-align: center;
 }
 
 .retourAccueil:hover {
@@ -1318,5 +1196,170 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .retourAccueil {
         font-size: 2rem;
+    }
+}
+
+
+/* About me */
+
+.detailsPresentation {
+    background-color: var(--color-presentation);
+    min-height: 81vh;
+}
+
+.detailsPresentation_container {
+    display: flex;
+    flex-direction: column;
+    min-height: 61vh;
+}
+
+@media screen and (min-width: 768px) {
+    .detailsPresentation_container {
+        flex-direction: row;
+    }
+}
+
+.photoMarine {
+    display: flex;
+    height: 50vh;
+}
+
+.imgPhotoMarine {
+    width: 200px;
+    margin: auto;
+    padding: 2%;
+}
+
+.description {
+    text-align: justify;
+    display: flex;
+}
+
+@media screen and (min-width: 768px) {
+    .photoMarine {
+        width: 40vw;
+    }
+    .imgPhotoMarine {
+        width: 300px;
+    }
+    .description {
+        width: 60vw;
+    }
+}
+
+.titreDescription {
+    text-align: center;
+    padding-top: 2%;
+    font-family: 'Hearth_Stone', sans-serif;
+    font-size: 2rem;
+}
+
+.texteDescription {
+    margin: auto;
+    padding: 3%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+    .texteDescription {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1024px) {
+    .texteDescription {
+        font-size: 1.5em;
+    }
+}
+
+.buttonCV {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    margin-top: 20px;
+    padding: 18px 50px;
+    border-radius: 3px;
+    transition: all 0.3s ease-in 0s;
+    display: inline-block;
+    margin-bottom: 5%;
+}
+
+.buttonCV:hover {
+    background: white;
+    color: black;
+    text-decoration: none;
+}
+
+.liens {
+    display: flex;
+    flex-direction: column;
+    min-height: 20vh;
+    border-top: solid 1px;
+}
+
+@media screen and (min-width: 768px) {
+    .liens {
+        flex-direction: row;
+    }
+}
+
+.adresse {
+    display: flex;
+}
+
+@media screen and (min-width: 768px) {
+    .adresse {
+        width: 50vw;
+    }
+    .comptes {
+        width: 50vw;
+    }
+}
+
+.detailsAdresse {
+    margin: auto;
+}
+
+.pAdresse {
+    margin: 0;
+}
+
+.comptes {
+    display: flex;
+}
+
+.detailsComptes {
+    margin: auto;
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.facebook {
+    width: 20px;
+    background: rgb(66, 103, 178);
+}
+
+.instagram {
+    width: 20px;
+}
+
+.linkedin {
+    width: 20px;
+    background: rgb(40, 103, 178);
+}
+
+@media screen and (min-width: 768px) {
+    .facebook {
+        width: 50px;
+    }
+    .instagram {
+        width: 50px;
+    }
+    .linkedin {
+        width: 50px;
     }
 }

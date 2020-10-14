@@ -24,6 +24,7 @@ class About_Me extends Component {
                   className="imgPhotoMarine"
                 ></img>
               </div>
+
               <div className="description">
                 <div className="texteDescription">
                   <p className="titreDescription">Salut,</p>

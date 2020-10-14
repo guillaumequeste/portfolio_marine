@@ -17,7 +17,7 @@ class Competences extends Component {
           <div className="detailsCompetences">
             <div className="bloc">
               <div className="sous-bloc">
-                <h3 className="titreDomaine">Pack Adobe</h3>
+                <h5 className="titreDomaine">Pack Adobe</h5>
                 <ul>
                   <li className="liSousBloc">
                     <span className="spanStar">
@@ -154,7 +154,7 @@ class Competences extends Component {
                 </ul>
               </div>
               <div className="sous-bloc">
-                <h3 className="titreDomaine">Pack Office</h3>
+                <h5 className="titreDomaine">Pack Office</h5>
                 <ul>
                   <li className="liSousBloc">
                     <img
@@ -287,7 +287,7 @@ class Competences extends Component {
             </div>
             <div className="bloc">
               <div className="sous-bloc">
-                <h3 className="titreDomaine">Logiciels de montage</h3>
+                <h5 className="titreDomaine">Logiciels de montage</h5>
                 <ul>
                   <li className="liSousBloc">
                   <img
@@ -418,7 +418,7 @@ class Competences extends Component {
                 </ul>
               </div>
               <div className="sous-bloc">
-                <h3 className="titreDomaine">Logiciels de dessin</h3>
+                <h5 className="titreDomaine">Logiciels de dessin</h5>
                 <ul>
                   <li className="liSousBloc">
                   <img
@@ -551,7 +551,7 @@ class Competences extends Component {
             </div>
             <div className="bloc">
               <div className="sous-blocAutres">
-                <h3 className="titreDomaine">Savoirs et savoir-faire</h3>
+                <h5 className="titreDomaine">Savoirs et savoir-faire</h5>
                 <ul>
                   <li className="liSousBlocAutres">
                     <h6 className="domaineAutres">Gestion de projet</h6>
@@ -898,7 +898,7 @@ class Competences extends Component {
                 </ul>
               </div>
               <div className="sous-blocAutres">
-                <h3 className="titreDomaine">Savoir-être</h3>
+                <h5 className="titreDomaine">Savoir-être</h5>
                 <ul>
                 <li className="liSousBlocAutres">
                     <h6 className="domaineAutres">Sens de l'organisation</h6>

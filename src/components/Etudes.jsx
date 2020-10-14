@@ -103,8 +103,7 @@ class Etudes extends Component {
               </div>
               <div className="descEtude">
                 <h5 className="descEtude_nom_h5">
-                  Baccalauréat Scientifique, Option Sciences de la Vie et de la
-                  Terre
+                  Baccalauréat Scientifique, Option SVT
                 </h5>
                 <p className="descEtude_nom_p">Lycée Jehan Ango</p>
                 <p className="descEtude_nom_p">- Dieppe (76) -</p>
