@@ -92,7 +92,7 @@ class Contact extends Component {
       return;
     }
 
-    const templateId = "template_yice5py"; // mettre son template_id (emailjs.com -> email templates)
+    const templateId = "template_id"; // mettre son template_id (emailjs.com -> email templates)
 
     this.sendFeedback(templateId, {
       nom: this.state.nom,
