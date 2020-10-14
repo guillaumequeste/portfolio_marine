@@ -393,7 +393,7 @@ class Experiences_professionnelles extends Component {
                         </h6>
                       </div>
                       <p className="lieu">
-                        Massmould (Bedford, Grande-Bretagne)
+                        Massmould (Bedford, UK)
                       </p>
                     </div>
                     <button

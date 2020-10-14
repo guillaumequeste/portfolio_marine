@@ -163,8 +163,14 @@
     }
     .titre_experiences_professionnelles {
         position: fixed;
-        top: 38%;
-        left: 76%;
+        top: 32%;
+        left: 72%;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .titre_experiences_professionnelles {
+        left: 75%;
     }
 }
 
@@ -181,8 +187,8 @@
     }
     .titre_centres_d_interets {
         position: fixed;
-        top: 70%;
-        left: 80%;
+        top: 60%;
+        left: 75%;
     }
 }
 
@@ -201,7 +207,7 @@
     .titre_competences {
         position: fixed;
         top: 85%;
-        left: 65%;
+        left: 60%;
     }
 }
 
@@ -221,6 +227,12 @@
     .titre_experiences_additionnelles {
         position: fixed;
         top: 85%;
+        left: 15%;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .titre_experiences_additionnelles {
         left: 25%;
     }
 }
@@ -268,14 +280,14 @@
 .titre_domaine {
     text-align: center;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-family: 'Palatino', sans-serif;
     font-style: italic;
 }
 
-@media screen and (max-width: 319px) {
+@media screen and (min-width: 768px) {
     .titre_domaine {
-        font-size: 0.8rem;
+        font-size: 1.3rem;
     }
 }
 
@@ -1090,13 +1102,18 @@
 .fontWeightBold {
     font-weight: bold;
     font-family: 'Microsoft', sans-serif;
-    font-size: 2em;
 }
 
 .whiteSpaceNormal {
     white-space: normal;
     padding-top: 5%;
     color: grey;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .whiteSpaceNormal {
+        font-size: 1.5em;
+    }
 }
 
 .bBlack {
