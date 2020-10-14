@@ -21,6 +21,7 @@ import FairePart from './components/FairePart'
 import Affiche from './components/Affiche'
 import DossierClients from './components/DossierClients'
 import Autre from './components/Autre'
+import APropos from './components/APropos'
 import About_Me from './components/About_Me'
 import Contact from './components/Contact'
 import NotFound from './components/NotFound'
@@ -47,6 +48,7 @@ const Root = () => (
       <Route path="/affiche" component={Affiche} />
       <Route path="/dossier_clients" component={DossierClients} />
       <Route path="/autre" component={Autre} />
+      <Route path="/a_propos" component={APropos} />
 
       <Route path="/contact" component={Contact} />
       <Route path="/notfound" component={NotFound} />
