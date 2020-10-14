@@ -41,3 +41,12 @@ background-color: rgba(255, 255, 255, 0);
         background-repeat: no-repeat;
         background-position: right;
     }
+
+<div className="bodyCentresDInterets">
+            <div className="centre">un</div>
+            <div className="centre">deux</div>
+            <div className="centre">trois</div>
+            <div className="centre">quatre</div>
+            <div className="centre">cinq</div>
+          </div>
+     
