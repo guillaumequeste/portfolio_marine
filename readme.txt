@@ -15,6 +15,8 @@ reste meta name description website created using create-react-app
 
 reformater : shift+alt+f
 
+Dans le fichier index.html dans le dossier build, remplacer le head :
+
 <head>
     <meta charset="utf-8" />
     <link rel="icon" href="/favicon.ico" />
