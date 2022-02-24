@@ -266,7 +266,7 @@ class Experiences_professionnelles extends Component {
                 
               <VerticalTimelineElement
                   className="vertical-timeline-element--work"
-                  date="novembre 2018 - aujourd'hui"
+                  date="janvier 2021 - aujourd'hui"
                   iconStyle={{ background: "rgb(0, 111, 83)", color: "#fff" }}
                 >
                   <div className="badge">
