@@ -17,7 +17,8 @@ class Experiences_professionnelles extends Component {
       details3: false,
       details4: false,
 
-      details6: false
+      details6: false,
+      details7: false
     };
     this.clicDetails1Plus = this.clicDetails1Plus.bind(this);
     this.clicDetails1Moins = this.clicDetails1Moins.bind(this);
@@ -30,6 +31,8 @@ class Experiences_professionnelles extends Component {
 
     this.clicDetails6Plus = this.clicDetails6Plus.bind(this);
     this.clicDetails6Moins = this.clicDetails6Moins.bind(this);
+    this.clicDetails7Plus = this.clicDetails7Plus.bind(this);
+    this.clicDetails7Moins = this.clicDetails7Moins.bind(this);
   }
 
   clicDetails1Plus() {
@@ -89,6 +92,18 @@ class Experiences_professionnelles extends Component {
   clicDetails6Moins() {
     this.setState({
       details6: false
+    });
+  }
+
+  clicDetails7Plus() {
+    this.setState({
+      details7: true
+    });
+  }
+
+  clicDetails7Moins() {
+    this.setState({
+      details7: false
     });
   }
 
@@ -183,6 +198,24 @@ class Experiences_professionnelles extends Component {
       fontSize: "1.5em"
     };
 
+    let divDetails7 = { display: "none", textAlign: "left" };
+    let buttonDetails7Plus = {
+      display: "block",
+      borderRadius: "5px",
+      backgroundColor: "rgb(2, 62, 24)",
+      color: "white",
+      fontWeight: "bold",
+      fontSize: "1.5em"
+    };
+    let buttonDetails7Moins = {
+      display: "none",
+      borderRadius: "5px",
+      backgroundColor: "rgb(2, 62, 24)",
+      color: "white",
+      fontWeight: "bold",
+      fontSize: "1.5em"
+    };
+
     if (this.state.details1 === true) {
       divDetails1.display = "block";
       buttonDetails1Plus.display = "none";
@@ -210,6 +243,12 @@ class Experiences_professionnelles extends Component {
       buttonDetails6Moins.display = "block";
     }
 
+    if (this.state.details7 === true) {
+      divDetails7.display = "block";
+      buttonDetails7Plus.display = "none";
+      buttonDetails7Moins.display = "block";
+    }
+
     return (
       <div>
         <Helmet
@@ -224,6 +263,62 @@ class Experiences_professionnelles extends Component {
           <div className="detailsExp_pro">
             <div className="frise">
               <VerticalTimeline className="timeline">
+                
+              <VerticalTimelineElement
+                  className="vertical-timeline-element--work"
+                  date="novembre 2018 - aujourd'hui"
+                  iconStyle={{ background: "rgb(0, 111, 83)", color: "#fff" }}
+                >
+                  <div className="badge">
+                    <div className="titres">
+                      <div className="titreLong">
+                        <h6 className="vertical-timeline-element-title fontWeightBold">
+                          Conceptrice
+                        </h6>
+                        <h6 className="titreLong2 fontWeightBold">
+                          {" "}
+                          bureau d'études
+                        </h6>
+                      </div>
+                      <p className="lieu">Smurfit Kappa (34)</p>
+                    </div>
+                    <button
+                      onClick={this.clicDetails7Plus}
+                      style={buttonDetails7Plus}
+                    >
+                      +
+                    </button>
+                    <ul style={divDetails7}>
+                      <li className="whiteSpaceNormal">
+                        <span className="bBlack">Pilotage de projets</span> pour
+                        de nombreux clients (Haribo, McCormick, Nestlé
+                        Watters...).
+                      </li>
+                      <li className="whiteSpaceNormal">
+                        <span className="bBlack">
+                          Dessins assistés par ordinateur
+                        </span>{" "}
+                        (Artios Cad).
+                      </li>
+                      <li className="whiteSpaceNormal">
+                        <span className="bBlack">Prototypages
+                        </span>{" "}
+                        sur tables de découpe.
+                      </li>
+                      <li className="whiteSpaceNormal">
+                        <span className="bBlack">Création</span> de nouveaux
+                        emballages.
+                      </li>
+                    </ul>
+                    <button
+                      onClick={this.clicDetails7Moins}
+                      style={buttonDetails7Moins}
+                    >
+                      -
+                    </button>
+                  </div>
+                </VerticalTimelineElement>
+                
                 <VerticalTimelineElement
                   className="vertical-timeline-element--work"
                   date="mars 2014 - novembre 2018"
@@ -359,7 +454,8 @@ class Experiences_professionnelles extends Component {
                         (Artios Cad).
                       </li>
                       <li className="whiteSpaceNormal">
-                        <span className="bBlack">Prototypages</span>
+                        <span className="bBlack">Prototypages
+                        </span>{" "}
                         sur tables de découpe.
                       </li>
                       <li className="whiteSpaceNormal">

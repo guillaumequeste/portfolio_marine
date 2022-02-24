@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Header from "./Header";
 import Helmet from "./Helmet";
 import EnTete from "./EnTete";
-import { NavLink } from "react-router-dom";
 
 class Centres_d_interets extends Component {
   render() {

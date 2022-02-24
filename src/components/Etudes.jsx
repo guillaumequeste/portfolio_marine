@@ -18,7 +18,7 @@ class Etudes extends Component {
             <div className="etude">
               <div className="typeEtude">
                 <div className="typeEtude_nom">
-                  <a href="https://www.efcde.com" target="_blank">
+                  <a href="https://www.efcde.com" target="_blank" rel="noopener noreferrer">
                     <img
                       src={require("../img/EFCDE.png")}
                       alt="efcde"
@@ -43,7 +43,7 @@ class Etudes extends Component {
             <div className="etude">
               <div className="typeEtude">
                 <div className="typeEtude_nom">
-                  <a href="https://www.esepac.com" target="_blank">
+                  <a href="https://www.esepac.com" target="_blank" rel="noopener noreferrer">
                     <img
                       src={require("../img/ESEPAC.png")}
                       alt="esepac"
@@ -66,7 +66,7 @@ class Etudes extends Component {
             <div className="etude">
               <div className="typeEtude">
                 <div className="typeEtude_nom">
-                  <a href="http://iutevreux.univ-rouen.fr/" target="_blank">
+                  <a href="http://iutevreux.univ-rouen.fr/" target="_blank" rel="noopener noreferrer">
                     <img
                       src={require("../img/IUT.png")}
                       alt="iut"
@@ -89,7 +89,7 @@ class Etudes extends Component {
             <div className="etude">
               <div className="typeEtude">
                 <div className="typeEtude_nom_vertical">
-                  <a href="http://ango-lyc.spip.ac-rouen.fr/" target="_blank">
+                  <a href="http://ango-lyc.spip.ac-rouen.fr/" target="_blank" rel="noopener noreferrer">
                     <img
                       src={require("../img/lycee.jpg")}
                       alt="lycee"

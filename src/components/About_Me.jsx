@@ -29,7 +29,7 @@ class About_Me extends Component {
                 <div className="texteDescription">
                   <p className="titreDescription">Salut,</p>
                   <p>
-                    Moi c'est Marine, j'ai 33 ans. Je suis une jeune femme
+                    Moi c'est Marine, j'ai 34 ans. Je suis une jeune femme
                     pleine de vie, dynamique et créative.
                   </p>
                   <p>
@@ -75,7 +75,7 @@ class About_Me extends Component {
                   <div>
                     <a
                       href="https://www.facebook.com/marine.queste"
-                      target="_blank"
+                      target="_blank" rel="noopener noreferrer"
                     >
                       <img
                         src={require("../img/facebook.png")}
@@ -87,7 +87,7 @@ class About_Me extends Component {
                   <div>
                     <a
                       href="https://www.instagram.com/marineqst/"
-                      target="_blank"
+                      target="_blank" rel="noopener noreferrer"
                     >
                       <img
                         src={require("../img/instagram.png")}
@@ -99,7 +99,7 @@ class About_Me extends Component {
                   <div>
                     <a
                       href="https://www.linkedin.com/in/marine-queste-463727b0/"
-                      target="_blank"
+                      target="_blank" rel="noopener noreferrer"
                     >
                       <img
                         src={require("../img/linkedin.png")}

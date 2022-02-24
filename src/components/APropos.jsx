@@ -18,7 +18,7 @@ class APropos extends Component {
             <div className="lienAPropos">
               <h5>Site réalisé par :</h5>
               <h5>Guillaume Queste</h5>
-              <a href="https://www.guillaumequeste.fr" target="_blank" className="url">
+              <a href="https://www.guillaumequeste.fr" target="_blank" rel="noopener noreferrer" className="url">
                 https://www.guillaumequeste.fr
               </a>
             </div>
