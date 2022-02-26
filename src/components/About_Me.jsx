@@ -64,9 +64,8 @@ class About_Me extends Component {
             <div className="liens">
               <div className="adresse">
                 <div className="detailsAdresse">
-                  <p className="pAdresse">458 Chemin des Meuniers</p>
-                  <p className="pAdresse">THIBERMONT</p>
-                  <p className="pAdresse">76370 MARTIN-EGLISE</p>
+                  <p className="pAdresse">43 route d'Aigues-Vives</p>
+                  <p className="pAdresse">30420 CALVISSON</p>
                   <p className="pAdresse">Tél : 06 50 66 81 48</p>
                 </div>
               </div>
